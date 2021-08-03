@@ -1,0 +1,36 @@
+.idea/
+*.iml
+*.ipr
+/co30_Domination4.Altis/*
+/co30_Domination.Malden/*
+/co30_DominationTT.Malden/*
+/co30_Domination.Sara/*
+/co30_Domination_carrier.Altis/*
+/co40_Domination.Chernarus/*
+/co40_Domination.Chernarus_winter/*
+/co40_domination.Staszow/*
+/co40_Domination.stozec/*
+/co40_Domination.Stratis/*
+/co40_Domination.Takistan/*
+/co40_Domination.Tanoa/*
+/co40_Domination.Cam_Lao_Nam/*
+/co40_MP_Paradrop.Chernarus/*
+/co50_AirCavA3.Chernarus/*
+/co20_HighMountains.Sara/*
+/dom_maker/*.pbo
+/dom_maker/DePbo.dll
+/dom_maker/MakePbo.exe
+/dom_maker/ArmaScriptCompiler.exe
+/dom_maker/libcsqfvm.dll
+co30_Domination.Altis.7z
+/co30_Domination.Altis - Kopie/*
+/co30_Domination.Altis - Copy/*
+/co40_Domination.gm_weferlingen_summer/*
+/co40_Domination.gm_weferlingen_winter/*
+/co30_Domination.Enoch/*
+/~co30_Domination.Altis/*
+/co40_Domination.cup_chernarus_A3/*
+/co30_Domination.song_bin_tanh/*
+/co40_Domination.Cam_Lao_Nam/*
+todo.txt
+dom_maker/DePbo64.dll

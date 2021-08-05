@@ -47,4 +47,6 @@ if (isServer) then {
 };
 #endif
 
+[] spawn VCM_fnc_VcomInit;
+
 diag_log [diag_frameno, diag_ticktime, time, "Dom init.sqf processed"];

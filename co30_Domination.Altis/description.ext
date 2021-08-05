@@ -41,6 +41,10 @@ class CfgWorlds {
 	};
 };
 
+class CfgFunctions {
+    #include "vcom\cfgFunctions.hpp"
+};
+
 enableDebugConsole = 1;
 
 class Header {

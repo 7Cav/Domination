@@ -48,7 +48,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -84,7 +84,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -117,7 +117,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -150,7 +150,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AP %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -183,7 +183,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -216,7 +216,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -249,7 +249,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -282,7 +282,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -315,7 +315,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -348,7 +348,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -381,7 +381,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -414,7 +414,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -447,7 +447,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -480,7 +480,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -513,7 +513,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -547,7 +547,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -581,7 +581,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -615,7 +615,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -648,7 +648,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -682,7 +682,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -716,7 +716,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -750,7 +750,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 
@@ -783,7 +783,7 @@ cd CUR_DIR
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
-makePbo -AJNP %NEW_VER%
+makePbo -AB %NEW_VER%
 rmdir /S /Q %NEW_VER%
 rmdir /S /Q %WORK_DIR%
 

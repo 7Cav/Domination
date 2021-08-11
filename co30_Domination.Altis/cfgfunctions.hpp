@@ -749,4 +749,5 @@ class cfgFunctions {
 			addc(animchangedeh);
 		};
 	};
+	#include "vcom\cfgFunctions.hpp"
 };

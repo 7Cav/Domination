@@ -375,13 +375,13 @@ class Params {
 		title = "$STR_DOM_MISSIONSTRING_980";
 		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23};
 #ifdef __CUP_CHERNARUS__
-		default = 7;
+		default = 10;
 #endif
 #ifdef __TANOA__
 		default = 7;
 #endif
 #ifdef __ALTIS__
-		default = 5;
+		default = 10;
 #endif
 #ifdef __CUP_SARA__
 		default = 7;
@@ -422,14 +422,14 @@ class Params {
 	class d_enablefatigue {
 		title = "$STR_DOM_MISSIONSTRING_1568";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 
 	class d_enablesway {
 		title = "$STR_DOM_MISSIONSTRING_1583";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 
@@ -613,7 +613,7 @@ class Params {
 		title = "$STR_DOM_MISSIONSTRING_1732";
 		values[] = {0,1};
 #ifdef __ALTIS__
-		default = 0;
+		default = 1;
 #endif
 #ifdef __STRATIS__
 		default = 0;
@@ -1018,7 +1018,7 @@ class Params {
 	class d_score_needed_to_fly {
 		title = "$STR_DOM_MISSIONSTRING_2058";
 		values[] = {-1, 10, 50, 100, 500, 1000, 2000, 5000};
-		default = 10;
+		default = -1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1063","10","50","100","500","1000","2000","5000"};
 	};
 
@@ -1109,7 +1109,7 @@ class Params {
 	class d_enable_civs {
 		title = "$STR_DOM_MISSIONSTRING_1890";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_363","$STR_DOM_MISSIONSTRING_363_ON"};
 	};
 
@@ -1137,7 +1137,7 @@ class Params {
 	class d_enable_civ_vehs {
 		title = "$STR_DOM_MISSIONSTRING_1890CIVVEH";
 		values[] = {0, 10, 25, 50, 75, 100};
-		default = 0;
+		default = 10;
 		texts[] = {"$STR_DOM_MISSIONSTRING_363", "Very Low", "Low","Medium","High","Maximum"};
 	};
 	
@@ -1165,7 +1165,7 @@ class Params {
 	class d_tell_arty_cas {
 		title = "$STR_DOM_MISSIONSTRING_1894_TELL_ARTY_CAS";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
 
@@ -1389,7 +1389,7 @@ class Params {
 	class d_MTTowerSatchelsOnly {
 		title = "$STR_DOM_MISSIONSTRING_1213";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	

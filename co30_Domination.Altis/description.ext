@@ -708,7 +708,7 @@ class Params {
 	class d_arsenal_mod {
 		title = "$STR_DOM_MISSIONSTRING_1829";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 

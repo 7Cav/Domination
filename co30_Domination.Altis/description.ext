@@ -899,14 +899,14 @@ class Params {
 	class d_WithRevive {
 		title = "$STR_DOM_MISSIONSTRING_1005";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 
 	class d_WithReviveSpectating {
 		title = "$STR_DOM_MISSIONSTRING_1567";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 
@@ -920,7 +920,7 @@ class Params {
 	class d_ACEMedicalR {
 		title = "$STR_DOM_MISSIONSTRING_2051";
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 

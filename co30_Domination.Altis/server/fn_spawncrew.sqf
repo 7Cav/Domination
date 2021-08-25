@@ -55,9 +55,9 @@ if (count _crew > 0) then {
 						for "_i" from 1 to _counter do {
 							private _one_unit = _grp createUnit [selectRandom _munits, _grp, [], 0, "CARGO"];
 							//[_one_unit] joinSilent _grp;
-							_one_unit setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
-							_one_unit setSkill ["aimingAccuracy", _subskill];
-							_one_unit setSkill ["spotTime", _subskill];
+							//_one_unit setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
+							//_one_unit setSkill ["aimingAccuracy", _subskill];
+							//_one_unit setSkill ["spotTime", _subskill];
 							_one_unit call d_fnc_removenvgoggles_fak;
 							//_one_unit enableStamina false;
 							//_one_unit enableFatigue false;
@@ -96,9 +96,9 @@ if (count _crew > 0) then {
 		if (d_with_ai && {d_with_ranked}) then {
 			[_x, 4] call d_fnc_setekmode;
 		};
-		_x setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
-		_x setSkill ["aimingAccuracy", _subskill];
-		_x setSkill ["spotTime", 0.4 + _subskill];
+		//_x setUnitAbility ((d_skill_array # 0) + (random (d_skill_array # 1)));
+		//_x setSkill ["aimingAccuracy", _subskill];
+		//_x setSkill ["spotTime", 0.4 + _subskill];
 		//_x enableStamina false;
 		//_x enableFatigue false;
 		_x disableAI "RADIOPROTOCOL";

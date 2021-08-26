@@ -2078,15 +2078,15 @@
 <French>Objectifs Principaux Uniquement</French>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_265">
-<English>Welcome to Domination!</English>
-<Spanish>Bienvenido a Domination</Spanish>
-<Portuguese>Bem-vindo a Dominación!</Portuguese>
+<English>Welcome to 7th Cavalry Domination!</English>
+<Spanish>Bienvenido a 7th Cavalry Domination</Spanish>
+<Portuguese>Bem-vindo a 7th Cavalry Dominación!</Portuguese>
 <Korean>BWB 도미네이션에 오신 걸 환영합니다.</Korean>
 <Japanese>Dominationへようこそ!</Japanese>
-<Original>Welcome to Domination!</Original>
-<Russian>Добро пожаловать в Доминацию!</Russian>
-<Chinesesimp>欢迎来到 Domination！</Chinesesimp>
-<French>Bienvenue sur Domination</French>
+<Original>Welcome to 7th Cavalry Domination!</Original>
+<Russian>Добро пожаловать в 7th Cavalry Доминацию!</Russian>
+<Chinesesimp>欢迎来到 7th Cavalry Domination！</Chinesesimp>
+<French>Bienvenue sur 7th Cavalry Domination</French>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_266">
 <English>Have a nice time!</English>
@@ -12110,24 +12110,24 @@
 <French>%1 a tué un civil! Pénalité de %2 points déduite.</French>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_MARKEDFORDEATH">
-<English>%1 has been marked for death.  Keep %1 alive for %2 seconds.</English>
+<English>%1 has been marked by S6 Department for death.  Keep %1 alive for %2 seconds.</English>
 <Spanish>%1 has been marked for death.  Keep %1 alive for %2 seconds.</Spanish>
 <Portuguese>%1 has been marked for death.  Keep %1 alive for %2 seconds.</Portuguese>
 <Korean>%1 has been marked for death.  Keep %1 alive for %2 seconds.</Korean>
 <Japanese>%1 has been marked for death.  Keep %1 alive for %2 seconds.</Japanese>
-<Original>%1 has been marked for death.  Keep %1 alive for %2 seconds.</Original>
+<Original>%1 has been marked by S6 Department for death.  Keep %1 alive for %2 seconds.</Original>
 <Russian>%1 был отмечен, как убитый.  Возможно %1 останется живым еще %2 секунд.</Russian>
 <Chinesesimp>%1 已被标记为死亡。保持 %1 存活 %2 秒。</Chinesesimp>
 <Chinese>%1 has been marked for death.  Keep %1 alive for %2 seconds.</Chinese>
 <French>%1 has been marked for death.  Keep %1 alive for %2 seconds.</French>
 </Key>
 <Key ID="STR_DOM_MISSIONSTRING_MARKEDFORDEATHFAIL">
-<English>%1 only survived for %2 seconds.  Mission failed.</English>
+<English>%1 only survived for %2 seconds.  Mission failed, Blame Sweetwater.I</English>
 <Spanish>%1 only survived for %2 seconds.  Mission failed.</Spanish>
 <Portuguese>%1 only survived for %2 seconds.  Mission failed.</Portuguese>
 <Korean>%1 only survived for %2 seconds but.  Mission failed.</Korean>
 <Japanese>%1 only survived for %2 seconds.  Mission failed.</Japanese>
-<Original>%1 only survived for %2 seconds.  Mission failed.</Original>
+<Original>%1 only survived for %2 seconds.  Mission failed, Blame Sweetwater.I</Original>
 <Russian>%1 выжил %2 секунд.  Миссия провалена.</Russian>
 <Chinesesimp>%1 仅存活了 %2 秒。任务失败。</Chinesesimp>
 <Chinese>%1 only survived for %2 seconds.  Mission failed.</Chinese>

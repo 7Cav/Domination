@@ -19,7 +19,7 @@ private _trigger = [_target_center, [600,600,0,false,30], [d_own_side,"PRESENT",
 
 waitUntil {sleep 0.1;!isNil {_trigger getVariable "d_event_start"}};
 
-private _bunnyName = selectRandom ['Captain Fluffbutt', 'Ivan Ironfluff', 'Oreo FlopEar Rabbitton III', 'Thumper von Pinknose', 'Snowball the Terrible'];
+private _bunnyName = selectRandom ['Jarvis mcfluffs', 'Sypolt', 'Libers Pet', 'Whitsel the Bunny', 'Sweetwater the Terrible', 'Chance Jackrabbit', 'Snakes Bigsby'];
 
 private _eventDescription = format [localize "STR_DOM_MISSIONSTRING_2028_RABBIT", _bunnyName];
 d_mt_event_messages_array pushBack _eventDescription;

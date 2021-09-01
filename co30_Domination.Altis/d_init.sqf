@@ -448,7 +448,7 @@ if (isServer) then {
 #ifndef __TT__
 	// editor varname, unique number, true = respawn only when the chopper is completely destroyed, false = respawn after some time when no crew is in the chopper or chopper is destroyed
 	// unique number must be between 3000 and 3999
-	private _choppers = [[d_chopper_1,3001,true,600],[d_chopper_2,3002,true,1500],[d_chopper_3,3003,false,1500],[d_chopper_4,3004,false,600],[d_chopper_5,3005,false,600],[d_chopper_6,3006,false,600]] select {!isNil {_x # 0}};
+	private _choppers = [[d_chopper_1,3001,false,600],[d_chopper_2,3002,false,1500],[d_chopper_3,3003,false,600],[d_chopper_4,3004,false,600],[d_chopper_5,3005,false,600],[d_chopper_6,3006,false,600]] select {!isNil {_x # 0}};
 
 	if (!isNil "d_additional_wreck") then {
 		{

@@ -158,7 +158,7 @@ ace_maptools_rotateModifierKey = 1;
 // ACE Medical
 force force ace_medical_ai_enabledFor = 0;
 force force ace_medical_AIDamageThreshold = 0.07;
-force force ace_medical_bleedingCoefficient = 0.25;
+force force ace_medical_bleedingCoefficient = 0.5;
 force force ace_medical_blood_bloodLifetime = 900;
 force force ace_medical_blood_enabledFor = 2;
 force force ace_medical_blood_maxBloodObjects = 50;
@@ -206,8 +206,8 @@ force force ace_medical_treatment_locationSurgicalKit = 0;
 force force ace_medical_treatment_medicEpinephrine = 0;
 force force ace_medical_treatment_medicIV = 1;
 force force ace_medical_treatment_medicPAK = 2;
-force force ace_medical_treatment_medicSurgicalKit = 1;
-force force ace_medical_treatment_timeCoefficientPAK = 1;
+force force ace_medical_treatment_medicSurgicalKit = 2;
+force force ace_medical_treatment_timeCoefficientPAK = 0.5;
 
 // ACE Name Tags
 ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
@@ -230,8 +230,8 @@ ace_nametags_tagSize = 2;
 force force ace_nightvision_aimDownSightsBlur = 0;
 force force ace_nightvision_disableNVGsWithSights = false;
 force force ace_nightvision_effectScaling = 0.6;
-force force ace_nightvision_fogScaling = 1;
-force force ace_nightvision_noiseScaling = 0.5;
+force force ace_nightvision_fogScaling = 0.3;
+force force ace_nightvision_noiseScaling = 0.6;
 force force ace_nightvision_shutterEffects = false;
 
 // ACE Overheating

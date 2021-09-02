@@ -49,3 +49,33 @@ rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
 rmdir /S /Q %WORK_DIR%
+
+rem Blufor RHS Chernatus 2020
+set NEW_VER=co%D_NUM_PLAYERS%_domination_%D_VER%_rhs_blufor.chernarus_a3
+set MISSION_SQM=..\mission_sqm\mission_blufor_chernarus_a3_bin.sqm
+set X_SETUP=..\mission_sqm\x_setup_blufor_chernarus.sqf
+md %WORK_DIR%
+xcopy %MASTER%\*.* %WORK_DIR% /E /Y
+echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
+echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
+cd %WORK_DIR%
+del i_weapons_default.sqf
+del i_weapons_CUP.sqf
+del i_weapons_IFA3.sqf
+del i_weapons_UNSUNG.sqf
+del i_weapons_gmcwg.sqf
+del i_weapons_csla.sqf
+del i_weapons_vn.sqf
+cd missions
+rmdir /S /Q m
+rmdir /S /Q moa
+rmdir /S /Q msara
+rmdir /S /Q ma3t
+rmdir /S /Q ma3s
+rmdir /S /Q mifa3
+rmdir /S /Q ma3m
+cd CUR_DIR
+rem ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+rmdir /S /Q %WORK_DIR%

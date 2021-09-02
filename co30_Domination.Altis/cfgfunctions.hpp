@@ -211,6 +211,10 @@ class cfgFunctions {
 			addc(setmatxtloc);
 			addc(build_ranked_gear);
 			addc(makebarmhqwait);
+			addc(getMilitarypolice);
+			addc(getMilitarypolice1);
+			addc(getMissioncontroller);
+			addc(getMissioncontroller1);
 		};
 		class Dom_UI {
 			file = "clientui";

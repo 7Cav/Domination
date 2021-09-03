@@ -19,7 +19,7 @@ disabledAI = 1;
 respawn = "BASE";
 respawndelay = 20;
 debriefing = 1;
-showGPS = 0;
+showGPS = 1;
 showSquadRadar = 1;
 saving = 0;
 loadScreen = "pics\domls.paa";
@@ -457,7 +457,7 @@ class Params {
 	class d_respawnatsql {
 		title = "$STR_DOM_MISSIONSTRING_1705";
 		values[] = {0,2,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1705a","$STR_DOM_MISSIONSTRING_SQUAD","$STR_DOM_MISSIONSTRING_405"};
 	};
 	
@@ -471,7 +471,7 @@ class Params {
 	class d_with_MainTargetEvents {
 		title = "$STR_DOM_MISSIONSTRING_1052_EVENTS";
 		values[] = {0,1,2,-1,-2,-3,-4};
-		default = 0;
+		default = -1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_418","$STR_DOM_MISSIONSTRING_399","$STR_DOM_MISSIONSTRING_399B","$STR_DOM_MISSIONSTRING_418B","$STR_DOM_MISSIONSTRING_418C","$STR_DOM_MISSIONSTRING_418C_GUERR","$STR_DOM_MISSIONSTRING_ALL"};
 	};
 	
@@ -566,14 +566,14 @@ class Params {
 	class d_pnspace_msave {
 		title = "$STR_DOM_MISSIONSTRING_2084";
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
 	
 	class d_pnspace_msave_auto {
 		title = "$STR_DOM_MISSIONSTRING_2085";
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
 
@@ -594,7 +594,7 @@ class Params {
 	class d_enable_fog {
 		title = "$STR_DOM_MISSIONSTRING_1164a";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 
@@ -757,7 +757,7 @@ class Params {
 	class d_va_percentage {
 		title = "$STR_DOM_MISSIONSTRING_1992";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	
@@ -806,14 +806,14 @@ class Params {
 	class d_with_airtaxi {
 		title = "$STR_DOM_MISSIONSTRING_2072";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	
 	class d_with_airdrop {
 		title = "$STR_DOM_MISSIONSTRING_2073";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	
@@ -955,7 +955,7 @@ class Params {
 	class d_show_playernames {
 		title = "$STR_DOM_MISSIONSTRING_1159";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1446","$STR_DOM_MISSIONSTRING_1447"};
 	};
 
@@ -1081,7 +1081,7 @@ class Params {
 	class d_disable_player_arty {
 		title = "$STR_DOM_MISSIONSTRING_2077";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
 	
@@ -1095,7 +1095,7 @@ class Params {
 	class d_disable_player_cas {
 		title = "$STR_DOM_MISSIONSTRING_2078";
 		values[] = {0,1};
-		default = 0;
+		default = 1;
 		texts[] = {"$STR_DOM_MISSIONSTRING_1007","$STR_DOM_MISSIONSTRING_922"};
 	};
 	
@@ -1389,7 +1389,7 @@ class Params {
 	class d_MTTowerSatchelsOnly {
 		title = "$STR_DOM_MISSIONSTRING_1213";
 		values[] = {0,1};
-		default = 1;
+		default = 0;
 		texts[] = {"$STR_DOM_MISSIONSTRING_922","$STR_DOM_MISSIONSTRING_1007"};
 	};
 	

@@ -48,7 +48,7 @@ if (player isEqualTo ([] call d_fnc_getMilitarypolice) && !(serverCommandAvailab
     };
 };
 
-if (player isEqualTo ([] call KPLIB_fnc_getMilitarypolice1) && !(serverCommandAvailable "#kick")) then {
+if (player isEqualTo ([] call d_fnc_getMilitarypolice1) && !(serverCommandAvailable "#kick")) then {
 
     private _match = false;
 

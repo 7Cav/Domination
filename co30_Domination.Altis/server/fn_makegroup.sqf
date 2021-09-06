@@ -99,7 +99,8 @@ call {
 		private _min = 1 + random 15;
 		private _max = _min + (1 + random 15);
 		private _mid = _min + (random (_max - _min));	
-		[_grp, _pos, _center_rad, [_min, _mid, _max], "", _msize] spawn d_fnc_MakePatrolWPX;
+		//[_grp, _pos, _center_rad, [_min, _mid, _max], "", _msize] spawn d_fnc_MakePatrolWPX;
+		[_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
 		if (sunOrMoon != 1 && {_numvecs > 0 && {!_istatatic}}) then {
 			{
 				_x setPilotLight true;
@@ -111,7 +112,8 @@ call {
 		private _min = 1 + random 15;
 		private _max = _min + (1 + random 15);
 		private _mid = _min + (random (_max - _min));
-		[_grp, _pos, _center_rad, [_min, _mid, _max], "", _msize] spawn d_fnc_MakePatrolWPX;
+		//[_grp, _pos, _center_rad, [_min, _mid, _max], "", _msize] spawn d_fnc_MakePatrolWPX;
+		[_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
 		if (sunOrMoon != 1 && {_numvecs > 0 && {!_istatatic}}) then {
 			{
 				_x setPilotLight true;
@@ -123,7 +125,8 @@ call {
 		private _min = 1 + random 15;
 		private _max = _min + (1 + random 15);
 		private _mid = _min + (random (_max - _min));
-		[_grp, _pos, _center_rad, [_min, _mid, _max], "", _msize, true] spawn d_fnc_MakePatrolWPX;
+		//[_grp, _pos, _center_rad, [_min, _mid, _max], "", _msize, true] spawn d_fnc_MakePatrolWPX;
+		[_grp, [_grp], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
 		if (sunOrMoon != 1 && {_numvecs > 0 && {!_istatatic}}) then {
 			{
 				_x setPilotLight true;
@@ -133,7 +136,8 @@ call {
 	if (_type == "guard") exitWith {
 		if (_ismen) then {
 			_grp setVariable ["d_defend", true];
-			[_grp, _pos] spawn d_fnc_taskDefend;
+			//[_grp, _pos] spawn d_fnc_taskDefend;
+			[_grp, _pos, 50] call lambs_wp_fnc_taskCamp;
 		} else {
 			_grp setCombatMode "YELLOW";
 			_grp setFormation selectRandom ["COLUMN","STAG COLUMN","WEDGE","ECH LEFT","ECH RIGHT","VEE","LINE","FILE","DIAMOND"];
@@ -145,7 +149,8 @@ call {
 	if (_type == "guardstatic") exitWith {
 		if (_ismen) then {
 			_grp setVariable ["d_defend", true];
-			[_grp, _pos] spawn d_fnc_taskDefend;
+			//[_grp, _pos] spawn d_fnc_taskDefend;
+			[_grp, _pos, 50] call lambs_wp_fnc_taskCamp;
 		} else {
 			_grp setCombatMode "YELLOW";
 			_grp setFormation selectRandom ["COLUMN","STAG COLUMN","WEDGE","ECH LEFT","ECH RIGHT","VEE","LINE","FILE","DIAMOND"];

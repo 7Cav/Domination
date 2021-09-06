@@ -5,13 +5,13 @@ rem just copy MakePBO.exe and DePbo.dll in the dom_maker folder
 set BASE_MASTER=co30_Domination.Altis
 set MASTER=co30_Domination.Altis
 set D_VER=4_55
-set D_BNVER=4.55
+set D_BNVER=4.55   
 set D_NUM_PLAYERS=40
 set D_NUM_PLAYERS_TT=50
 set D_NUM_PLAYERS_CO=40
 
 set CUR_DIR=%cd%
-set WORK_DIR=E:\DomSQFC
+set WORK_DIR=C:\Users\I347256\Dom
 
 del *.pbo
 
@@ -22,7 +22,7 @@ xcopy ..\%BASE_MASTER%\*.* %MASTER% /E /Y
 
 rem Blufor RHS Altis
 set NEW_VER=co%D_NUM_PLAYERS%_domination_%D_VER%_rhs_blufor.Altis
-set MISSION_SQM=..\mission_sqm\mission_blufor_rhs_altis_bin.sqm
+set MISSION_SQM=..\mission_sqm\mission_blufor_rhs_altis.sqm
 set X_SETUP=..\mission_sqm\x_setup_blufor_rhs_altis.sqf
 md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
@@ -44,7 +44,7 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
+cd %CUR_DIR%
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
@@ -74,7 +74,7 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
+cd %CUR_DIR%
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
@@ -104,7 +104,7 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
+cd %CUR_DIR%
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
@@ -134,7 +134,7 @@ rmdir /S /Q ma3t
 rmdir /S /Q ma3s
 rmdir /S /Q mifa3
 rmdir /S /Q ma3m
-cd CUR_DIR
+cd %CUR_DIR%
 rem ArmaScriptCompiler.exe
 md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y

@@ -17,7 +17,8 @@
 /co40_MP_Paradrop.Chernarus/*
 /co50_AirCavA3.Chernarus/*
 /co20_HighMountains.Sara/*
-/dom_maker/*.pbo
+/dom_maker/*
+/dom_maker/build.bat
 /dom_maker/DePbo.dll
 /dom_maker/MakePbo.exe
 /dom_maker/ArmaScriptCompiler.exe

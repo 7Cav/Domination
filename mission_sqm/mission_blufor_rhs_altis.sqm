@@ -17364,7 +17364,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								name="Militarypolice";
+								name="militarypolice";
 								description="Military Police@MILITARY-POLICE";
 								isPlayable=1;
 								class Inventory
@@ -17456,7 +17456,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								name="Militarypolice1";
+								name="militarypolice1";
 								description="Military Police@ADMIN";
 								isPlayable=1;
 								class Inventory
@@ -17585,7 +17585,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								name="Missioncontroller";
+								name="missioncontroller";
 								description="Mission Controller@MISSION-CONTROLLER";
 								isPlayable=1;
 								class Inventory
@@ -17753,7 +17753,7 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								name="Missioncontroller1";
+								name="missioncontroller1";
 								description="Mission Controller@ADMIN";
 								isPlayable=1;
 								class Inventory

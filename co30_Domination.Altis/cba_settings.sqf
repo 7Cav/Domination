@@ -748,7 +748,7 @@ force lambs_main_radioWest = 500;
 
 // VCOM
 
-Vcm_DrivingActivatd = true;
+Vcm_DrivingActivated = true;
 
 Vcm_AISkills_East_AimingAccuracy = 0.10;
 Vcm_AISkills_General_AimingAccuracy = 0.10;

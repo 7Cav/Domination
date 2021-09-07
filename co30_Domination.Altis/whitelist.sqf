@@ -9,7 +9,7 @@ cav_whitelisted_steamids = [
     "76561197997124640", // Liber.N      - The Banned
 	"76561199181230059", // Liber.N      - The Not So Banned
     "76561198039932196", // Jarvis       - Literally A Robot
-    "76561197993187376", // Sypolt.R     - Hello World
+    //"76561197993187376", // Sypolt.R     - Hello World
 	"76561198099828056", // Whitsel.M    - S3 1IC
 	"76561198007243124", // Kleinman.H   - REO
 	"76561198081516483", //	Ryan.B       - RCSM

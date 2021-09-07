@@ -362,7 +362,7 @@ ace_vehicles_hideEjectAction = true;
 force force ace_vehicles_keepEngineRunning = false;
 
 // ACE View Distance Limiter
-force force ace_viewdistance_enabled = true;
+force force ace_viewdistance_enabled = false;
 force force ace_viewdistance_limitViewDistance = 10000;
 ace_viewdistance_objectViewDistanceCoeff = 3;
 ace_viewdistance_viewDistanceAirVehicle = 0;

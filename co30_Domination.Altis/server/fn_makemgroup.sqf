@@ -115,14 +115,14 @@ if !(_sideToEngage isEqualType []) then {
 	_sideToEngage = [_sideToEngage];
 };
 
-//if (!(sideUnknown in _sideToEngage) && {d_ai_awareness_rad > 0 || {d_snp_aware > 0 || {d_ai_pursue_rad > 0 || {d_ai_aggressiveshoot > 0}}}}) then {
+if (!(sideUnknown in _sideToEngage) && {d_ai_awareness_rad > 0 || {d_snp_aware > 0 || {d_ai_pursue_rad > 0 || {d_ai_aggressiveshoot > 0}}}}) then {
 	//advanced awareness
-//	private _rad = d_ai_awareness_rad;
-//	if ("sniper" in (toLowerANSI (groupId _grp))) then { _rad = 1400; }; // if sniper group then set awareness radius to 1400m
-//	{
-//		[_x, _sideToEngage, _rad, d_ai_pursue_rad, d_ai_aggressiveshoot, d_ai_quickammo] spawn d_fnc_hallyg_dlegion_Snipe_awareness;
-//	} forEach units _grp;
-//};
+	private _rad = d_ai_awareness_rad;
+	if ("sniper" in (toLowerANSI (groupId _grp))) then { _rad = 1400; }; // if sniper group then set awareness radius to 1400m
+	{
+		[_x, _sideToEngage, _rad, d_ai_pursue_rad, d_ai_aggressiveshoot, d_ai_quickammo] spawn d_fnc_hallyg_dlegion_Snipe_awareness;
+	} forEach units _grp;
+};
 
 #ifndef __TT__
 _ret call d_fnc_addceo;

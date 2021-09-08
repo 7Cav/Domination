@@ -19,10 +19,10 @@ disabledAI = 1;
 respawn = "BASE";
 respawndelay = 20;
 debriefing = 1;
-showGPS = 1;
+showGPS = 0;
 showSquadRadar = 1;
 saving = 0;
-loadScreen = "pics\domls.paa";
+loadScreen = "pics\logo.paa";
 overviewText = "$STR_DOM_MISSIONSTRING_1828";
 
 class CfgWorlds {

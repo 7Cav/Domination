@@ -541,7 +541,7 @@ if (isServer) then {
 	// new in 3.70  third parameter for MHQ means a message will be displayed for a MHQ if it gets destroyed
 	private _vecsar = [
 		[d_vec_mhq_1,0,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhq_2,1,localize "STR_DOM_MISSIONSTRING_13"],[d_vec_med_1,100],[d_vec_rep_1,200],[d_vec_fuel_1,201],[d_vec_ammo_1,202], [d_vec_rep_2,203],
-		[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401], [d_vec_tank_1,402], [d_vec_tank_2,403], [d_vec_trans_3,404], [d_vec_trans_4,405], [d_vec_trans_5,406],
+		[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401], [d_vec_tank_1,402], [d_vec_tank_2,403], [d_vec_trans_3,404], [d_vec_trans_4,405], [d_vec_trans_5,406], [d_vec_trans_6,407],
 		[d_vec_mhqo_1,1000,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhqo_2,1001,localize "STR_DOM_MISSIONSTRING_13"],[d_vec_medo_1,1100],[d_vec_repo_1,1200],[d_vec_fuelo_1,1201],[d_vec_ammoo_1,1202], [d_vec_repo_2,1203],
 		[d_vec_fuelo_2,1204], [d_vec_ammoo_2,1205], [d_vec_engo_1,1300], [d_vec_engo_2,1301], [d_vec_transo_1,1400], [d_vec_transo_2,1401]] select {!isNil {_x # 0}};
 		

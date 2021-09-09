@@ -272,7 +272,8 @@ if (d_with_ranked || {d_database_found}) then {
 };
 
 // available in non ranked versions too, removes nvg if without nvg is activated to avoid cheating
-player addEventhandler ["Take", {call d_fnc_ptakeweapon}];
+// Sweetwater -- Removed EH for ptakeweapon since we got dupe bug. please remove if not fixed.
+// player addEventhandler ["Take", {call d_fnc_ptakeweapon}];
 
 if (d_MissionType != 2) then {
 	if (d_resolved_targets isNotEqualTo []) then {

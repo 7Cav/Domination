@@ -8,7 +8,7 @@ class EditorData
 	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=1653;
+		nextID=1659;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=9;
+		nextID=13;
 	};
 	class Camera
 	{
-		pos[]={14644.875,43.392143,16721.912};
-		dir[]={-0.51006848,-0.37951708,0.77203333};
-		up[]={-0.20934121,0.92506558,0.31686071};
-		aside[]={0.83444858,-1.7495186e-006,0.55129927};
+		pos[]={14647.475,53.724304,16760.443};
+		dir[]={-0.65580541,-0.75422996,0.032789048};
+		up[]={-0.7533142,0.65658218,0.03766438};
+		aside[]={0.049935851,-6.6065695e-007,0.9987604};
 	};
 };
 binarizationWanted=0;
-sourceName="co30_Domination";
+sourceName="co40_domination_4_55_rhs_blufor";
 addons[]=
 {
 	"A3_Ui_F",
@@ -435,7 +435,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=531;
+		items=534;
 		class Item0
 		{
 			dataType="Marker";
@@ -17970,7 +17970,6 @@ class Mission
 				};
 			};
 			id=857;
-			atlOffset=0.099994659;
 		};
 		class Item414
 		{
@@ -22734,6 +22733,182 @@ class Mission
 				};
 				nAttributes=4;
 			};
+		};
+		class Item531
+		{
+			dataType="Layer";
+			name="Base Objects";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="Building";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={14622.837,18.610001,16771.871};
+								angles[]={0,5.4803343,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								name="medical";
+							};
+							id=1655;
+							type="Land_Medevac_house_V1_F";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="DoorStates";
+									expression="['init',_this,_value] call bis_fnc_3DENAttributeDoorStates;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=3;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+					};
+					id=1654;
+				};
+			};
+			id=1653;
+		};
+		class Item532
+		{
+			dataType="Layer";
+			name="Door Trigeers";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Trigger";
+					position[]={14623.406,18.975241,16772.24};
+					angle=-0.80285114;
+					class Attributes
+					{
+						name="medicalTrigger";
+						condition="call{this}";
+						onActivation="call{_handle= [] spawn { " \n "    _gate = medical; " \n "    _trigger = medicalTrigger; " \n "    _sleep = 5; " \n " " \n "    {_gate animateSource _x} forEach [ " \n "        ['Door_1_sound_source', 1],  " \n "        ['Door_2_sound_source', 1],  " \n "        ['Door_1_rot', 1],  " \n "        ['Door_2_rot', 1] " \n "        ]; " \n " " \n "    waitUntil {sleep _sleep; not ((getPos player) inArea _trigger)}; " \n " " \n "    {_gate animateSource _x} forEach [ " \n "        ['Door_1_sound_source', 0],  " \n "        ['Door_2_sound_source', 0],  " \n "        ['Door_1_rot', 0],  " \n "        ['Door_2_rot', 0] " \n "        ]; " \n "    };}";
+						sizeA=2;
+						sizeB=3;
+						sizeC=2;
+						repeatable=1;
+						activationBy="ANYPLAYER";
+					};
+					id=1657;
+					type="EmptyDetectorAreaR50";
+					atlOffset=0.47242737;
+				};
+			};
+			id=1656;
+			atlOffset=0.47242737;
+		};
+		class Item533
+		{
+			dataType="Trigger";
+			position[]={14621.355,18.70343,16773.297};
+			angle=-0.80285114;
+			class Attributes
+			{
+				name="healZone";
+				condition="call{this and ((getPos (thisList select 0)) select 2 < 1);}";
+				onActivation="call{{ " \n "    _x setDamage 0;  " \n "    _x setFuel 1; " \n "    _x call ace_medical_treatment_fnc_fullHealLocal;  " \n "} foreach thislist }";
+				sizeA=2.5;
+				sizeB=2;
+				sizeC=2;
+				repeatable=1;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+			};
+			id=1658;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.11976814;
 		};
 	};
 };

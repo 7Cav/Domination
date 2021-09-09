@@ -68,12 +68,12 @@ del i_weapons_csla.sqf
 del i_weapons_vn.sqf
 cd missions
 rmdir /S /Q m
+rmdir /S /Q mifa3
 rmdir /S /Q moa
 rmdir /S /Q msara
 rmdir /S /Q ma3t
 rmdir /S /Q ma3s
-rmdir /S /Q mifa3
-rmdir /S /Q ma3m
+rmdir /S /Q ma3a
 cd %CUR_DIR%
 rem ArmaScriptCompiler.exe
 md %NEW_VER%

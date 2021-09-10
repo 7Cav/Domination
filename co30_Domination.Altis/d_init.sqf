@@ -448,7 +448,7 @@ if (isServer) then {
 #ifndef __TT__
 	// editor varname, unique number, true = respawn only when the chopper is completely destroyed, false = respawn after some time when no crew is in the chopper or chopper is destroyed
 	// unique number must be between 3000 and 3999
-	private _choppers = [[d_chopper_1,3001,false,600],[d_chopper_2,3002,false,1500],[d_chopper_3,3003,false,600],[d_chopper_4,3004,false,600],[d_chopper_5,3005,false,600],[d_chopper_6,3006,false,600]] select {!isNil {_x # 0}};
+	private _choppers = [[d_chopper_1,3001,false,600],[d_chopper_2,3002,false,1500],[d_chopper_3,3003,false,600],[d_chopper_4,3004,false,600],[d_chopper_5,3005,false,600],[d_chopper_6,3006,false,600],[d_chopper_7,3007,false,600],[d_chopper_8,3008,false,600]] select {!isNil {_x # 0}};
 
 	if (!isNil "d_additional_wreck") then {
 		{
@@ -494,7 +494,7 @@ if (isServer) then {
 		_specialv call d_fnc_initvecsspecial;
 	};
 #else
-	private _choppers = [[d_chopper_1,3001,false,600],[d_chopper_2,3002,false,1500],[d_chopper_3,3003,false,600],[d_chopper_4,3004,false,600],[d_chopper_5,3005,false,600],[d_chopper_6,3006,false,600],
+	private _choppers = [[d_chopper_1,3001,false,600],[d_chopper_2,3002,false,1500],[d_chopper_3,3003,false,600],[d_chopper_4,3004,false,600],[d_chopper_5,3005,false,600],[d_chopper_6,3006,false,600],[d_chopper_7,3007,false,600],[d_chopper_8,3008,false,600],
 		[d_choppero_1,4001,true,600],[d_choppero_2,4002,true,1500],[d_choppero_3,4003,false,1500],[d_choppero_4,4004,false,600],[d_choppero_5,4005,false,600],[d_choppero_6,4006,false,600]] select {!isNil {_x # 0}};
 	
 	//[[d_chopper_1,3001,true,600],[d_chopper_2,3002,true,1500],[d_chopper_3,3003,false,1500],[d_chopper_4,3004,false,600],[d_chopper_5,3005,false,600],[d_chopper_6,3006,false,600],
@@ -540,8 +540,8 @@ if (isServer) then {
 	//0-99 = MHQ, 100-199 = Medic vehicles, 200-299 = Fuel, Repair, Reammo trucks, 300-399 = Engineer Salvage trucks, 400-499 = Transport trucks
 	// new in 3.70  third parameter for MHQ means a message will be displayed for a MHQ if it gets destroyed
 	private _vecsar = [
-		[d_vec_mhq_1,0,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhq_2,1,localize "STR_DOM_MISSIONSTRING_13"],[d_vec_med_1,100],[d_vec_rep_1,200],[d_vec_fuel_1,201],[d_vec_ammo_1,202], [d_vec_rep_2,203],
-		[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401], [d_vec_tank_1,402], [d_vec_tank_2,403], [d_vec_trans_3,404], [d_vec_trans_4,405], [d_vec_trans_5,406], [d_vec_trans_6,407],
+		[d_vec_mhq_1,0,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhq_2,1,localize "STR_DOM_MISSIONSTRING_13"],[d_vec_med_1,100],[d_vec_med_2,101],[d_vec_rep_1,200],[d_vec_fuel_1,201],[d_vec_ammo_1,202], [d_vec_rep_2,203],
+		[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401], [d_vec_tank_1,402], [d_vec_tank_2,403], [d_vec_trans_3,404], [d_vec_trans_4,405], [d_vec_trans_5,406], [d_vec_trans_6,407], [d_vec_tank_3,408], [d_vec_tank_4,409], [d_vec_trans_6,410], [d_vec_trans_7,411],
 		[d_vec_mhqo_1,1000,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhqo_2,1001,localize "STR_DOM_MISSIONSTRING_13"],[d_vec_medo_1,1100],[d_vec_repo_1,1200],[d_vec_fuelo_1,1201],[d_vec_ammoo_1,1202], [d_vec_repo_2,1203],
 		[d_vec_fuelo_2,1204], [d_vec_ammoo_2,1205], [d_vec_engo_1,1300], [d_vec_engo_2,1301], [d_vec_transo_1,1400], [d_vec_transo_2,1401]] select {!isNil {_x # 0}};
 		

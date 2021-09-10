@@ -48,5 +48,6 @@ if (isServer) then {
 #endif
 
 [] spawn VCM_fnc_VcomInit;
+[] call KPPLM_fnc_postInit;
 
 diag_log [diag_frameno, diag_ticktime, time, "Dom init.sqf processed"];

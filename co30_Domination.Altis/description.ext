@@ -2231,6 +2231,8 @@ class CfgTaskEnhancements {
 };
 
 #include "CfgVehicles.hpp"
+#include "KP\KPGUI\KPGUI_defines.inc"
+#include "KP\KPPLM\ui\KPPLM_dialog.inc"
 
 class Extended_Init_Eventhandlers {
 	class Car {

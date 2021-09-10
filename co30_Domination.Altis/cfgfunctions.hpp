@@ -754,4 +754,5 @@ class cfgFunctions {
 		};
 	};
 	#include "vcom\cfgFunctions.hpp"
+	#include "KP\KPPLM\KPPLM_functions.inc"
 };

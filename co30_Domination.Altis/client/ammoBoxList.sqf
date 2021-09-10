@@ -36,6 +36,13 @@ CLIENT_spawn_big_box = {
   clearbackpackcargoGlobal _crate;
 };
 
+CLIENT_spawn_track = {
+  params ["_position"];
+
+  _crate = [_position, "ACE_Track"] call CLIENT_SpawnBox;
+
+};
+
 CLIENT_spawn_airDrop_box = {
   params ["_position"];
 

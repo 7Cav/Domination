@@ -8,7 +8,7 @@ class EditorData
 	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=1659;
+		nextID=1665;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=13;
+		nextID=48;
 	};
 	class Camera
 	{
-		pos[]={14647.475,53.724304,16760.443};
-		dir[]={-0.65580541,-0.75422996,0.032789048};
-		up[]={-0.7533142,0.65658218,0.03766438};
-		aside[]={0.049935851,-6.6065695e-007,0.9987604};
+		pos[]={14508.135,150.76178,16907.936};
+		dir[]={0.70113111,-0.67915022,-0.21718958};
+		up[]={0.64873785,0.73399884,-0.20095959};
+		aside[]={-0.29589868,2.7008355e-008,-0.95521998};
 	};
 };
 binarizationWanted=0;
@@ -78,13 +78,15 @@ addons[]=
 	"CUP_StandaloneTerrains_Core_Faction",
 	"cav_textures",
 	"A3_Structures_F_System",
-	"cav_flag"
+	"cav_flag",
+	"A3_Structures_F_Enoch_Decals_Horizontal",
+	"A3_Supplies_F_Enoch_Ammoboxes"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=39;
+		items=41;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -351,6 +353,20 @@ class AddonsMetaData
 			author="7th Cavalry S3 Mod Team";
 			url="http://7cav.us";
 		};
+		class Item39
+		{
+			className="A3_Structures_F_Enoch";
+			name="Arma 3 Contact Platform - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item40
+		{
+			className="A3_Supplies_F_Enoch";
+			name="Arma 3 Enoch - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -358,7 +374,8 @@ dlcs[]=
 	"RHS_USAF",
 	"Jets",
 	"Tank",
-	"Heli"
+	"Heli",
+	"Enoch"
 };
 randomSeed=10318084;
 class ScenarioData
@@ -435,7 +452,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=534;
+		items=536;
 		class Item0
 		{
 			dataType="Marker";
@@ -16977,7 +16994,7 @@ class Mission
 					side="West";
 					class Entities
 					{
-						items=1;
+						items=2;
 						class Item0
 						{
 							dataType="Object";
@@ -17023,6 +17040,115 @@ class Mission
 								};
 							};
 							id=1643;
+							type="B_Pilot_F";
+							atlOffset=1.9073486e-006;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.99000001;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={14593.196,18.011438,16792.83};
+								angles[]={0,2.3808558,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								description="Attack Fixed Wing Pilot@EAGLE-1";
+								isPlayable=1;
+								class Inventory
+								{
+									class binocular
+									{
+										name="ACE_VectorDay";
+									};
+									class uniform
+									{
+										typeName="rhs_uniform_cu_ocp";
+										isBackpack=0;
+									};
+									class vest
+									{
+										typeName="rhsusf_iotv_ocp_Rifleman";
+										isBackpack=0;
+									};
+									class backpack
+									{
+										typeName="rhsusf_assault_eagleaiii_ocp";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									gps="ItemGPS";
+									goggles="G_Combat";
+									hmd="rhsusf_ANPVS_14";
+									headgear="rhsusf_ach_bare";
+								};
+							};
+							id=1664;
 							type="B_Pilot_F";
 							atlOffset=1.9073486e-006;
 							class CustomAttributes
@@ -22909,6 +23035,173 @@ class Mission
 			id=1658;
 			type="EmptyDetectorAreaR50";
 			atlOffset=0.11976814;
+		};
+		class Item534
+		{
+			dataType="Layer";
+			name="Logistics Crates";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14577.938,17.91,16728.018};
+						angles[]={0,0.75049162,0};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+						init="call{[this] call BIS_fnc_replaceWithSimpleObject;}";
+						name="logistics_pad";
+						disableSimulation=1;
+					};
+					id=1660;
+					type="Land_ConcretePanels_01_single_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14573.322,18.735302,16723.002};
+						angles[]={0,0.73548174,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						ammo=0.25855634;
+						init="call{null = [this, ""logistics_pad_1"", []] execVM ""client\ammoBoxSpawner.sqf"";" \n "[this, false, [0,0,0], 0] call ace_dragging_fnc_setDraggable; " \n "[this, false, [0,0,0], 0] call ace_dragging_fnc_setCarryable;}";
+					};
+					id=1661;
+					type="I_E_CargoNet_01_ammo_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[""launch_NLAW_F"",""arifle_MX_F"",""arifle_MX_SW_F"",""FirstAidKit""],[1,2,1,10]],[[""30Rnd_65x39_caseless_mag"",""16Rnd_9x21_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""20Rnd_762x51_Mag"",""100Rnd_65x39_caseless_mag"",""1Rnd_HE_Grenade_shell"",""3Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""Chemlight_green"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellGreen"",""UGL_FlareWhite_F"",""UGL_FlareGreen_F"",""ACE_SpareBarrel"",""ACE_20Rnd_65x47_Scenar_mag"",""ACE_30Rnd_65x47_Scenar_mag"",""ACE_20Rnd_65_Creedmor_mag"",""ACE_30Rnd_65_Creedmor_mag"",""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_20Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_20Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_20Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_20Rnd_762x51_Mag_Tracer"",""ACE_20Rnd_762x51_Mag_Tracer_Dim""],[24,6,6,6,6,3,1,2,2,6,2,6,6,2,2,2,2,2,4,4,4,4,4,4,4,4,4,4,4,4]],[[""Laserdesignator"",""acc_flashlight"",""bipod_01_F_blk"",""ACE_Chemlight_Shield"",""ACE_EarPlugs""],[1,2,1,12,12]],[[""B_Kitbag_mcamo""],[2]]],false]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_arsenal_attribute";
+							expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"ARRAY"
+													};
+												};
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"SCALAR"
+													};
+												};
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_cargo_size";
+							expression="[_this, _value] call ace_cargo_fnc_setSize;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=-1;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			id=1659;
+		};
+		class Item535
+		{
+			dataType="Marker";
+			position[]={14578.01,19.811716,16727.877};
+			name="logistics_pad_1";
+			type="Empty";
+			angle=3.0000103;
+			id=1662;
+			atlOffset=1.9017162;
 		};
 	};
 };

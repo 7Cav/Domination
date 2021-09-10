@@ -16,7 +16,7 @@ private _cr = 250;
 		_pos set [2, 0];
 		d_target_names pushBack [_pos, _name, _dtar getVariable ["d_cityradius", _cr], _forEachIndex, _dtar];
 	} else {
-		private _nlocs = nearestLocations [_dtar, ["NameCityCapital", "NameCity", "NameVillage"], 500];
+		private _nlocs = nearestLocations [_dtar, ["NameCityCapital", "NameCity", "NameVillage", "Hill", "NameLocal"], 500];
 		__TRACE_2("","_dtar","_nlocs")
 		if (_nlocs isNotEqualTo []) then {
 			private _locposnl0 = locationPosition (_nlocs # 0);

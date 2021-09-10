@@ -53,6 +53,9 @@ class Header {
 #ifdef __ALTIS__
 	maxPlayers = 72;
 #endif
+#ifdef __LYTHIUM__
+	maxPlayers = 97;
+#endif
 #ifdef __CUP_CHERNARUS__
 	maxPlayers = 72;
 #endif
@@ -308,6 +311,10 @@ class Params {
 		values[] = {9998,9999,2,4,6,8,10,12,14,16,18,20,25,34};
 		texts[] = {"$STR_DOM_MISSIONSTRING_969","$STR_DOM_MISSIONSTRING_2008","2","4","6","8","10","12","14","16","18","20","25","34"};
 #endif
+#ifdef __LYTHIUM__
+		values[] = {9998,9999,2,4,6,8,10,12,14,16,18,20,25,34};
+		texts[] = {"$STR_DOM_MISSIONSTRING_969","$STR_DOM_MISSIONSTRING_2008","2","4","6","8","10","12","14","16","18","20","25","34"};
+#endif
 #ifdef __CUP_CHERNARUS__
 		values[] = {9998,9999,2,4,6,8,10,12,14,16,18,21};
 		texts[] = {"$STR_DOM_MISSIONSTRING_969","$STR_DOM_MISSIONSTRING_2008","2","4","6","8","10","12","14","16","18","21"};
@@ -382,6 +389,9 @@ class Params {
 #endif
 #ifdef __ALTIS__
 		default = 10;
+#endif
+#ifdef __LYTHIUM__
+		default = 6;
 #endif
 #ifdef __CUP_SARA__
 		default = 7;
@@ -614,6 +624,9 @@ class Params {
 		values[] = {0,1};
 #ifdef __ALTIS__
 		default = 1;
+#endif
+#ifdef __LYTHIUM__
+		default = 0;
 #endif
 #ifdef __STRATIS__
 		default = 0;
@@ -2041,6 +2054,16 @@ class CfgIdentities {
 	};
 #endif
 #ifdef __ALTIS__
+	class DHQ_OP1: DHQ_BF1 {
+		name = "Aziz, HQ";
+		speaker = "male03per";
+	};
+	class DHQ_OP2: DHQ_BF1 {
+		name = "Horiz, HQ";
+		speaker = "male02per";
+	};
+#endif
+#ifdef __LYTHIUM__
 	class DHQ_OP1: DHQ_BF1 {
 		name = "Aziz, HQ";
 		speaker = "male03per";

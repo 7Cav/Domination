@@ -59,6 +59,12 @@ d_rhs = false;
 d_rhs = true;
 #endif
 
+#ifndef __LYTHIUM__
+d_lythium = false;
+#else
+d_lythium = true;
+#endif
+
 #ifndef __GMCWG__
 d_gmcwg = false;
 #else
@@ -198,6 +204,9 @@ d_e_marker_color_alpha = 0.8;
 #ifdef __RHS__
 #include "sm_bonus_vec_ar_rhs.sqf"
 #endif
+#ifdef __LYTHIUM__
+#include "sm_bonus_vec_ar_rhs.sqf"
+#endif
 #ifdef __UNSUNG__
 #include "sm_bonus_vec_ar_uns.sqf"
 #endif
@@ -248,6 +257,9 @@ d_e_marker_color_alpha = 0.8;
 #include "mt_bonus_vec_ar_altis.sqf"
 #endif
 #ifdef __RHS__
+#include "mt_bonus_vec_ar_rhs.sqf"
+#endif
+#ifdef __LYTHIUM__
 #include "mt_bonus_vec_ar_rhs.sqf"
 #endif
 #ifdef __UNSUNG__
@@ -342,6 +354,9 @@ d_cargotower =
 #ifdef __CUP_TAKISTAN__
 	"Land_Cargo_Tower_V3_F";
 #endif
+#ifdef __LYTHIUM__
+	"Land_Cargo_Tower_V3_F";
+#endif
 #ifdef __CUP_SARA__
 	"Land_Cargo_Tower_V1_F";
 #endif
@@ -384,6 +399,9 @@ d_wcamp =
 	"Land_Cargo_Patrol_V4_F";
 #endif
 #ifdef __CUP_TAKISTAN__
+	"Land_Cargo_Patrol_V1_F";
+#endif
+#ifdef __LYTHIUM__
 	"Land_Cargo_Patrol_V1_F";
 #endif
 #ifdef __CUP_SARA__
@@ -819,6 +837,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __CUP_TAKISTAN__
 #include "d_allmen_O_CUP_TAKI.sqf"
 #endif
+#ifdef __LYTHIUM__
+#include "d_allmen_O_lythium.sqf"
+#endif
 #ifdef __CUP_SARA__
 #include "d_allmen_O_CUP_SLA.sqf"
 #endif
@@ -904,6 +925,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __CUP_TAKISTAN__
 #include "d_allmen_G_default.sqf"
 #endif
+#ifdef __LYTHIUM__
+#include "d_allmen_G_default.sqf"
+#endif
 #ifdef __CUP_SARA__
 #include "d_allmen_G_default.sqf"
 #endif
@@ -955,6 +979,9 @@ if (!d_gmcwgwinter) then {
 #endif
 #ifdef __CUP_TAKISTAN__
 #include "d_specops_O_CUP_TAKI.sqf"
+#endif
+#ifdef __LYTHIUM__
+#include "d_specops_O_default.sqf"
 #endif
 #ifdef __CUP_SARA__
 #include "d_specops_O_CUP_SLA.sqf"
@@ -1028,6 +1055,12 @@ if (!d_gmcwgwinter) then {
 		["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_sniper"] call d_fnc_GetConfigGroup, ["East","rhs_faction_vmf","rhs_group_rus_vmf_infantry_recon","rhs_group_rus_vmf_infantry_recon_squad_mg_sniper"] call d_fnc_GetConfigGroup
 	];
 #endif
+#ifdef __LYTHIUM__
+	d_specops_E = [
+		["East","UK3CB_ARD_O","SpecOps","UK3CB_ARD_O_Recon_SpecSquad"] call d_fnc_GetConfigGroup, ["East","UK3CB_ARD_O","SpecOps","UK3CB_ARD_O_DEM_SpecTeam"] call d_fnc_GetConfigGroup,
+		["East","UK3CB_ARD_O","SpecOps","UK3CB_ARD_O_SniperTeam"] call d_fnc_GetConfigGroup, ["East","UK3CB_TKM_O","SpecOps","UK3CB_TKM_O_Sniper_Team"] call d_fnc_GetConfigGroup
+	];
+#endif
 	d_specops_G = [["I_G_Soldier_exp_F", "I_Soldier_exp_F", "I_G_Soldier_GL_F", "I_G_medic_F"]];
 
 	d_sabotage_E = [["O_recon_exp_F"]];
@@ -1039,6 +1072,11 @@ if (!d_gmcwgwinter) then {
 	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
 #endif
 #ifdef __RHS__
+	d_sabotage_E = [["rhs_vmf_recon_rifleman_scout_akm", "rhs_vmf_recon_sergeant"]];
+	d_sabotage_W = [["rhsusf_socom_marsoc_cso_breacher", "rhsusf_socom_marsoc_cso"]];
+	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
+#endif
+#ifdef __LYTHIUM__
 	d_sabotage_E = [["rhs_vmf_recon_rifleman_scout_akm", "rhs_vmf_recon_sergeant"]];
 	d_sabotage_W = [["rhsusf_socom_marsoc_cso_breacher", "rhsusf_socom_marsoc_cso"]];
 	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
@@ -1077,6 +1115,11 @@ if (!d_gmcwgwinter) then {
 	d_sniper_W = [["West","rhs_faction_usarmy_d","rhs_group_nato_usarmy_d_infantry","rhs_group_nato_usarmy_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 #endif
+#ifdef __LYTHIUM__
+	d_sniper_E = [["East","UK3CB_TKM_O","SpecOps","UK3CB_TKM_O_Sniper_Team"] call d_fnc_GetConfigGroup];
+	d_sniper_W = [["West","rhs_faction_usarmy_d","rhs_group_nato_usarmy_d_infantry","rhs_group_nato_usarmy_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
+	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
+#endif
 #ifdef __UNSUNG__
 	d_sniper_E = [["uns_men_VC_mainforce_Rmrk", "uns_men_VC_mainforce_Roff"]];
 	d_sabotage_E = [["uns_men_VC_mainforce_68_Roff","uns_men_VC_mainforce_68_Ra1", "uns_men_VC_mainforce_68_Ra2", "uns_men_VC_mainforce_68_Rmg"]];
@@ -1112,6 +1155,9 @@ if (!d_gmcwgwinter) then {
 #endif
 #ifdef __CUP_TAKISTAN__
 #include "d_veh_a_O_CUP_TAKI.sqf"
+#endif
+#ifdef __LYTHIUM__
+#include "d_veh_a_O_lythium.sqf"
 #endif
 #ifdef __CUP_SARA__
 #include "d_veh_a_O_CUP_SARA.sqf"
@@ -1182,6 +1228,9 @@ if (!d_gmcwgwinter) then {
 
 #ifdef __ALTIS__
 	d_arti_observer_E = [["O_recon_JTAC_F"]];
+#endif
+#ifdef __LYTHIUM__
+	d_arti_observer_E = [["UK3CB_ADE_O_SPOT"]];
 #endif
 #ifdef __LIVONIA__
 	d_arti_observer_E = [["O_T_Recon_JTAC_F"]];
@@ -1326,6 +1375,9 @@ if (!d_gmcwgwinter) then {
 			};
 			if (d_rhs) exitWith {
 				"RHS_A10"
+			};
+			if (d_lythium) exitWith {
+				"JS_JC_FA18E"
 			};
 			if (d_vn) exitWith {
 				"vn_b_air_f4c_ucas"
@@ -1544,6 +1596,9 @@ if (!d_gmcwgwinter) then {
 		if (d_unsung) exitWith {
 			d_civilians_t = ["uns_civilian1","uns_civilian2","uns_civilian3","uns_civilian4"];
 		};
+		if (d_lythium) exitWith {
+			d_civilians_t = ["UK3CB_TKC_C_CIV","UK3CB_TKC_C_DOC","UK3CB_TKC_C_PILOT","UK3CB_TKC_C_SPOT","UK3CB_TKC_C_WORKER","UK3CB_ADC_C_CIV_ISL_01","UK3CB_ADC_C_DOC_ISL","UK3CB_ADC_C_LABOURER_ISL","UK3CB_ADC_C_CIV_ISL","UK3CB_ADC_C_SPOT_ISL"];
+		};
 		if (d_vn) exitWith {
 			d_civilians_t = ["vn_c_men_01","vn_c_men_02","vn_c_men_03","vn_c_men_04","vn_c_men_05","vn_c_men_06","vn_c_men_07","vn_c_men_08","vn_c_men_09","vn_c_men_10","vn_c_men_11","vn_c_men_12","vn_c_men_13","vn_c_men_14","vn_c_men_22","vn_c_men_23","vn_c_men_24","vn_c_men_25","vn_c_men_26","vn_c_men_27","vn_c_men_28","vn_c_men_29","vn_c_men_30","vn_c_men_31","vn_c_men_32"];
 		};
@@ -1614,6 +1669,10 @@ if (!d_gmcwgwinter) then {
 		};
 		if (d_rhs) exitWith {
 			"rhsusf_m1a1aimwd_usarmy"
+			rhsusf_m1a2sep1tuskiid_usarmy
+		};
+		if (d_lythium) exitWith {
+			"rhsusf_m1a2sep1tuskiid_usarmy"
 		};
 		if (d_gmcwg) exitWith {
 			if (d_gmcwgwinter) exitWith {
@@ -1665,6 +1724,9 @@ if (!d_gmcwgwinter) then {
 		if (d_rhs) exitWith {
 			"RHS_M2A2_wd"
 		};
+		if (d_lythium) exitWith {
+			"RHS_M2A2_wd"
+		};
 		if (d_gmcwg) exitWith {
 			if (d_gmcwgwinter) exitWith {
 				"gm_ge_army_m113a1g_apc_win"
@@ -1708,6 +1770,9 @@ if (!d_gmcwgwinter) then {
 
 #ifdef __ALTIS__
 #include "d_sm_classes_default.sqf"
+#endif
+#ifdef __LYTHIUM__
+#include "d_sm_classes_lythium.sqf"
 #endif
 #ifdef __LIVONIA__
 #include "d_sm_classes_default.sqf"
@@ -1804,6 +1869,9 @@ if (!d_gmcwgwinter) then {
 				};
 				if (d_rhs) exitWith {
 					["rhs_mig29s_vmf","rhs_mig29sm_vmf","rhs_mig29s_vvsc","rhs_mig29sm_vvsc","RHS_Su25SM_vvsc","RHS_Su25SM_vvs","RHS_T50_vvs_generic_ext","RHS_T50_vvs_blueonblue"]
+				};
+				if (d_lythium) exitWith {
+					["UK3CB_ADA_O_Antonov_AN2_Armed_Bombs","UK3CB_ADA_O_Antonov_AN2_Armed","UK3CB_ADA_O_Antonov_AN2_Armed_Rockets","UK3CB_TKA_O_Cessna_T41_Armed","UK3CB_ARD_O_MIG29S"]
 				};
 				if (d_unsung) exitWith {
 					["uns_Mig21_CAS", "uns_Mig21_CBU", "uns_Mig21_HCAS"]
@@ -1908,6 +1976,9 @@ if (!d_gmcwgwinter) then {
 				if (d_rhs) exitWith {
 					["RHS_Mi24P_vdv","RHS_Mi24V_vdv","RHS_Ka52_vvsc","RHS_Mi24P_vvsc","RHS_Mi24Vt_vvsc","rhs_mi28n_vvsc"]
 				};
+				if (d_lythium) exitWith {
+					["UK3CB_ARD_O_Mi8AMTSh","UK3CB_ADA_O_UH1H_GUNSHIP"]
+				};
 				if (d_unsung) exitWith {
 					["uns_Mi8TV_VPAF_MG"]
 				};
@@ -1939,6 +2010,18 @@ if (!d_gmcwgwinter) then {
 	d_transport_chopper = call {
 		if (d_enemy_side_short == "E") exitWith {
 			["O_T_VTOL_02_infantry_grey_F"]
+		};
+		if (d_enemy_side_short == "W") exitWith {
+			["B_T_VTOL_01_infantry_blue_F"]
+		};
+		["I_Heli_Transport_02_F"]
+	};
+#endif
+#ifdef __LYTHIUM__
+	// enemy parachute troops transport chopper
+	d_transport_chopper = call {
+		if (d_enemy_side_short == "E") exitWith {
+			["UK3CB_ADA_O_Mi8","UK3CB_ADA_O_UH1H"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
 			["B_T_VTOL_01_infantry_blue_F"]
@@ -2131,6 +2214,9 @@ if (!d_gmcwgwinter) then {
 				if (d_rhs) exitWith {
 					["RHS_Mi24P_vvs"]
 				};
+				if (d_lythium) exitWith {
+					["UK3CB_ADA_O_UH1H_GUNSHIP"]
+				};
 				["O_Heli_Attack_02_black_F"]
 			};
 		};
@@ -2187,6 +2273,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __ALTIS__
 		"Land_Cargo_HQ_V1_F";
 #endif
+#ifdef __LYTHIUM__
+		"Land_Cargo_HQ_V1_F";
+#endif
 #ifdef __CUP_CHERNARUS__
 		"Land_Cargo_HQ_V4_F";
 #endif
@@ -2211,6 +2300,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __LIVONIA__
 		"Land_Cargo_HQ_V4_F";
 #endif
+#ifdef __LYTHIUM__
+		"LWarfareBDepot";
+#endif
 #ifdef __TT__
 		"Land_Cargo_HQ_V1_F";
 #endif
@@ -2229,6 +2321,9 @@ if (!d_gmcwgwinter) then {
 
 	d_b_small_static_high =
 #ifdef __ALTIS__
+		"Land_BagBunker_Small_F";
+#endif
+#ifdef __LYTHIUM__
 		"Land_BagBunker_Small_F";
 #endif
 #ifdef __CUP_CHERNARUS__
@@ -2370,6 +2465,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __ALTIS__
 		_civVehiclesWeightedCityWealthHigh;
 #endif
+#ifdef __LYTHIUM__
+		_civVehiclesWeightedRural;
+#endif
 #ifdef __CUP_CHERNARUS__
 		_civVehiclesWeightedRural;
 #endif
@@ -2489,6 +2587,9 @@ if (!d_gmcwgwinter) then {
 #endif
 #ifdef __CUP_CHERNARUS__
 		_mixedFaces;
+#endif
+#ifdef __LYTHIUM__
+		(_greekFaces + _persianFaces);
 #endif
 #ifdef __CUP_TAKISTAN__
 		(_greekFaces + _persianFaces);

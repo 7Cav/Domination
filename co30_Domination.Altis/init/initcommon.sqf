@@ -137,7 +137,7 @@ if (isNil "d_ranked_a") then {
 		[3,2,1,0], // points engineers get for repairing an air vehicle, tank, car, other
 		10, // points an artillery operator needs for a strike
 		3, // points in the AI version for recruiting one soldier
-		10, // points a player needs for an AAHALO parajump
+		0, // points a player needs for an AAHALO parajump
 		10, // points that get subtracted for creating a vehicle at a MHQ
 		20, // points needed to create a vehicle at a MHQ
 		3, // points a medic gets if someone heals at his Mash

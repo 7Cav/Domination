@@ -1669,7 +1669,6 @@ if (!d_gmcwgwinter) then {
 		};
 		if (d_rhs) exitWith {
 			"rhsusf_m1a1aimwd_usarmy"
-			rhsusf_m1a2sep1tuskiid_usarmy
 		};
 		if (d_lythium) exitWith {
 			"rhsusf_m1a2sep1tuskiid_usarmy"

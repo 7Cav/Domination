@@ -9,7 +9,7 @@ cav_whitelisted_steamids = [
     "76561197997124640", // Liber.N      - The Banned
 	"76561199181230059", // Liber.N      - The Not So Banned
     "76561198039932196", // Jarvis       - Literally A Robot
-    //"76561197993187376", // Sypolt.R     - Hello World
+    "76561197993187376", // Sypolt.R     - Hello World
 	"76561198099828056", // Whitsel.M    - S3 1IC
 	"76561198007243124", // Kleinman.H   - REO
 	"76561198081516483", //	Ryan.B       - RCSM
@@ -28,9 +28,11 @@ cav_whitelisted_steamids = [
 	"76561198009849378", // Stewart.B    - PL 2/B/1-7
 	"76561197995041250", // Black.A      - PS 1/C/1-7
 	"76561198070981528", // Schmidt.A    - PS 2/C/1-7
+	"76561198142092836", // Zubrican.F   - SL 1/1/B/1-7
+	"76561198829112234", // Lamb.J       - SL 2/1/B/1-7
 	"76561198031348897", // Gibbs.K      - SL 3/1/B/1-7
 	"76561197979976899", // Abate.L      - SL 1/2/B/1-7
-	"76561197963550741",  // Boyd.M       - ASL 1/2/B/1-7
+	"76561197963550741", // Boyd.M       - ASL 1/2/B/1-7
 	"76561197998065387", // Knights.Z    - SL 4/2/B/1-7
 	"76561198073062030", // Ocean.M      - SL 2/1/C/1-7
 	"76561198043140265", // Centeno.JP   - SL 2/2/C/1-7
@@ -39,8 +41,7 @@ cav_whitelisted_steamids = [
 	"76561198000293318", // Wulf.C       - S3 Pub
 	"76561198102939824", //	Geki.T       - S3 Pub
 	"76561197983063284", // Tyrcon.L     - S3 Pub
-	"76561198043140265", // Centeno.J    - S3 Pub
-	"76561198021516465" // Ronnings.P   - S3 Pub
+	"76561198043140265"  // Centeno.J    - S3 Pub
 ];
 
 //MP stuffs
@@ -54,5 +55,5 @@ MP_whitelisted_steamids = [
 	"76561198103184850", // Davidson.J   - MP
     "76561198064801106", // Tiddens.M    - MP
     "76561198028913012", // Rozhkov.P    - MP
-    "76561198010258244" // Volkerson.A  - MP
+    "76561198010258244"  // Volkerson.A  - MP
 ];

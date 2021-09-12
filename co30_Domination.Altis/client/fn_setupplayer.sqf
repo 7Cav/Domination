@@ -400,6 +400,15 @@ d_points_needed_18 = (d_points_needed # 6) + 200000;
 		if (!d_ifa3lite && {!isNil "d_chopper_trigger"}) then {
 			[d_chopper_trigger, localize "STR_DOM_MISSIONSTRING_528", 5, 1, 0] call d_fnc_addto3drawar;
 		};
+		if (!isNil "d_box_trig_1") then {
+			[d_box_trig_1, localize "STR_DOM_MISSIONSTRING_7001", 2.5, 0, 0] call d_fnc_addto3drawar;
+		};
+		if (!isNil "d_box_trig_2") then {
+			[d_box_trig_2, localize "STR_DOM_MISSIONSTRING_7001", 2.5, 0, 0] call d_fnc_addto3drawar;
+		};
+		if (!isNil "d_healbox_1") then {
+			[d_healbox_1, localize "STR_DOM_MISSIONSTRING_7002", 1, 0, 0] call d_fnc_addto3drawar;
+		};
 	};
 	private _allmhs = allMissionObjects "HeliH";
 	{

@@ -13,25 +13,8 @@ the array following the marker definition. The array has the structure of:
 // Get the object the spawn options will belong to
 
 #include "ammoBoxList.sqf";
-_this params ["_object", "_marker", "_items"];
-
-{
-  _object addAction
-    [
-        format ["<t color='#FF0000'>Spawn %1</t>", _x select 0],
-        CLIENT_SpawnBox,
-        [getMarkerPos _marker, _x select 1],
-        10,
-        true,
-        true,
-        "",
-        "true",
-        10,
-        false,
-        "",
-        ""
-    ];
-} forEach _items;
+_this params ["_object", "_marker"];
+// edited from _this params ["_object", "_marker", "_items"];
 
 private _ammoboxTypes = [
   [format ["<t color='#ff9933'>Small Empty Crate</t>"], CLIENT_spawn_small_box],

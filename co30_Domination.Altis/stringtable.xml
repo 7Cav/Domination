@@ -14535,6 +14535,14 @@
 <Chinesesimp>保存的 profileNamespace 任务进度自动加载</Chinesesimp>
 <French>Saved profileNamespace mission progress auto load</French>
 </Key>
+<Key ID="STR_DOM_MISSIONSTRING_7001">
+<English>Ammo Box Spawner</English>
+<Original>Ammo Box Spawner</Original>
+</Key>
+<Key ID="STR_DOM_MISSIONSTRING_7002">
+<English>Healing Station</English>
+<Original>Healing Station</Original>
+</Key>
 </Container>
 </Package>
 <Package name="KPPLM">

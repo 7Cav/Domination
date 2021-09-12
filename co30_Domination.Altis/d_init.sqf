@@ -474,7 +474,7 @@ if (isServer) then {
 	// editor varname, unique number
 	//0-99 = MHQ, 100-199 = Medic vehicles, 200-299 = Fuel, Repair, Reammo trucks, 300-399 = Engineer Salvage trucks, 400-499 = Transport trucks
 	// new in 3.70  third parameter for MHQ means a message will be displayed for a MHQ if it gets destroyed
-	private _vecsar = [[d_vec_mhq_1,0,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhq_2,1, localize "STR_DOM_MISSIONSTRING_13"],[d_vec_med_1,100],[d_vec_rep_1,200],[d_vec_fuel_1,201],[d_vec_ammo_1,202], [d_vec_rep_2,203],[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401]] select {!isNil {_x # 0}};
+	private _vecsar = [[d_vec_mhq_1,0,localize "STR_DOM_MISSIONSTRING_12"],[d_vec_mhq_2,1, localize "STR_DOM_MISSIONSTRING_13"],[d_vec_med_1,100],[d_vec_med_2,101],[d_vec_rep_1,200],[d_vec_fuel_1,201],[d_vec_ammo_1,202], [d_vec_rep_2,203],[d_vec_fuel_2,204], [d_vec_ammo_2,205], [d_vec_eng_1,300], [d_vec_eng_2,301], [d_vec_trans_1,400], [d_vec_trans_2,401]] select {!isNil {_x # 0}};
 	{
 		_vecsar pushBack [_x, 500 + _forEachIndex];
 	} forEach (vehicles select {(str _x) select [0, 12] isEqualTo "d_vec_wreck_"});

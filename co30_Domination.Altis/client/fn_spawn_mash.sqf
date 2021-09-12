@@ -63,6 +63,16 @@ call {
 	if (d_vn) exitWith {
 		_medic_tent addItemCargoGlobal ["vn_b_item_firstaidkit", 25];
 	};
+	if (d_with_ace) exitWith {
+		_medic_tent addItemCargoGlobal ["ACE_epinephrine", 25];
+		_medic_tent addItemCargoGlobal ["ACE_morphine", 25];
+		_medic_tent addItemCargoGlobal ["ACE_EarPlugs", 5];
+		_medic_tent addItemCargoGlobal ["ACE_surgicalKit", 1];
+		_medic_tent addItemCargoGlobal ["ACE_elasticBandage", 30];
+		_medic_tent addItemCargoGlobal ["ACE_personalAidKit", 5];
+		_medic_tent addItemCargoGlobal ["ACE_splint", 10];
+		_medic_tent addItemCargoGlobal ["ACE_salineIV", 25];
+	};
 	_medic_tent addItemCargoGlobal ["FirstAidKit", 25];
 };
 player reveal _medic_tent;

@@ -80,7 +80,7 @@ md %NEW_VER%
 xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
 rmdir /S /Q %WORK_DIR%
 
-rem Blufor RHS Chernatus
+rem Blufor RHS Chernarus
 set NEW_VER=co%D_NUM_PLAYERS%_domination_%D_VER%_rhs_blufor.Chernarus
 set MISSION_SQM=..\mission_sqm\mission_blufor_chernarus.sqm
 set X_SETUP=..\mission_sqm\x_setup_blufor_chernarus.sqf

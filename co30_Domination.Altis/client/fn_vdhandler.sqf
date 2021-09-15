@@ -23,25 +23,25 @@ private _checkvdpos = {
 	false
 };
 
-while {true} do {
-	if (d_maintarget_auto_vd) then {
-		if (!d_isvdreduced && {isNull (findDisplay 312) && {viewDistance > 600 && {isNull objectParent player && {call _checkvdpos}}}}) then {
-			setViewDistance 600;
-			setObjectViewDistance 700;
-			d_isvdreduced = true;
-		} else {
-			if (d_isvdreduced && {alive player && {!isNull (findDisplay 312) || {!isNull objectParent player || {!(call _checkvdpos)}}}}) then {			
-				setViewDistance d_curviewdistance;
-				setObjectViewDistance d_curobjectdistance;
-				d_isvdreduced = false;
-			};
-		};
-	} else {
-		if (d_isvdreduced) then {
-			setViewDistance d_curviewdistance;
-			setObjectViewDistance d_curobjectdistance;
-			d_isvdreduced = false;
-		};
-	};
-	sleep 10;
-};
+//while {true} do {
+//	if (d_maintarget_auto_vd) then {
+//		if (!d_isvdreduced && {isNull (findDisplay 312) && {viewDistance > 600 && {isNull objectParent player && {call _checkvdpos}}}}) then {
+//			setViewDistance 600;
+//			setObjectViewDistance 700;
+//			d_isvdreduced = true;
+//		} else {
+//			if (d_isvdreduced && {alive player && {!isNull (findDisplay 312) || {!isNull objectParent player || {!(call _checkvdpos)}}}}) then {			
+//				setViewDistance d_curviewdistance;
+//				setObjectViewDistance d_curobjectdistance;
+//				d_isvdreduced = false;
+//			};
+//		};
+//	} else {
+//		if (d_isvdreduced) then {
+//			setViewDistance d_curviewdistance;
+//			setObjectViewDistance d_curobjectdistance;
+//			d_isvdreduced = false;
+//		};
+//	};
+//	sleep 10;
+//};

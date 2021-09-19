@@ -65,6 +65,12 @@ d_lythium = false;
 d_lythium = true;
 #endif
 
+#ifndef __VT7__
+d_vt7 = false;
+#else
+d_vt7 = true;
+#endif
+
 #ifndef __GMCWG__
 d_gmcwg = false;
 #else
@@ -207,6 +213,9 @@ d_e_marker_color_alpha = 0.8;
 #ifdef __LYTHIUM__
 #include "sm_bonus_vec_ar_rhs.sqf"
 #endif
+#ifdef __VT7__
+#include "sm_bonus_vec_ar_rhs.sqf"
+#endif
 #ifdef __UNSUNG__
 #include "sm_bonus_vec_ar_uns.sqf"
 #endif
@@ -260,6 +269,9 @@ d_e_marker_color_alpha = 0.8;
 #include "mt_bonus_vec_ar_rhs.sqf"
 #endif
 #ifdef __LYTHIUM__
+#include "mt_bonus_vec_ar_rhs.sqf"
+#endif
+#ifdef __VT7__
 #include "mt_bonus_vec_ar_rhs.sqf"
 #endif
 #ifdef __UNSUNG__
@@ -357,6 +369,9 @@ d_cargotower =
 #ifdef __LYTHIUM__
 	"Land_Cargo_Tower_V3_F";
 #endif
+#ifdef __VT7__
+	"Land_Cargo_Tower_V3_F";
+#endif
 #ifdef __CUP_SARA__
 	"Land_Cargo_Tower_V1_F";
 #endif
@@ -402,6 +417,9 @@ d_wcamp =
 	"Land_Cargo_Patrol_V1_F";
 #endif
 #ifdef __LYTHIUM__
+	"Land_Cargo_Patrol_V1_F";
+#endif
+#ifdef __VT7__
 	"Land_Cargo_Patrol_V1_F";
 #endif
 #ifdef __CUP_SARA__
@@ -840,6 +858,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __LYTHIUM__
 #include "d_allmen_O_lythium.sqf"
 #endif
+#ifdef __VT7__
+#include "d_allmen_O_vt7.sqf"
+#endif
 #ifdef __CUP_SARA__
 #include "d_allmen_O_CUP_SLA.sqf"
 #endif
@@ -928,6 +949,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __LYTHIUM__
 #include "d_allmen_G_default.sqf"
 #endif
+#ifdef __VT7__
+#include "d_allmen_G_default.sqf"
+#endif
 #ifdef __CUP_SARA__
 #include "d_allmen_G_default.sqf"
 #endif
@@ -981,6 +1005,9 @@ if (!d_gmcwgwinter) then {
 #include "d_specops_O_CUP_TAKI.sqf"
 #endif
 #ifdef __LYTHIUM__
+#include "d_specops_O_default.sqf"
+#endif
+#ifdef __VT7__
 #include "d_specops_O_default.sqf"
 #endif
 #ifdef __CUP_SARA__
@@ -1061,6 +1088,11 @@ if (!d_gmcwgwinter) then {
 		["East","UK3CB_ARD_O","SpecOps","UK3CB_ARD_O_SniperTeam"] call d_fnc_GetConfigGroup, ["East","UK3CB_TKM_O","SpecOps","UK3CB_TKM_O_Sniper_Team"] call d_fnc_GetConfigGroup
 	];
 #endif
+#ifdef __VT7__
+	d_specops_E = [
+		["East","UK3CB_NAP_O","SpecOps","UK3CB_NAP_O_DEMO_Team"] call d_fnc_GetConfigGroup, ["East","UK3CB_NAP_O","SpecOps","UK3CB_NAP_O_Sniper_Team"] call d_fnc_GetConfigGroup
+	];
+#endif
 	d_specops_G = [["I_G_Soldier_exp_F", "I_Soldier_exp_F", "I_G_Soldier_GL_F", "I_G_medic_F"]];
 
 	d_sabotage_E = [["O_recon_exp_F"]];
@@ -1078,6 +1110,11 @@ if (!d_gmcwgwinter) then {
 #endif
 #ifdef __LYTHIUM__
 	d_sabotage_E = [["rhs_vmf_recon_rifleman_scout_akm", "rhs_vmf_recon_sergeant"]];
+	d_sabotage_W = [["rhsusf_socom_marsoc_cso_breacher", "rhsusf_socom_marsoc_cso"]];
+	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
+#endif
+#ifdef __VT7__
+	d_sabotage_E = [["UK3CB_NAP_O_DEM", "UK3CB_NAP_O_ENG"]];
 	d_sabotage_W = [["rhsusf_socom_marsoc_cso_breacher", "rhsusf_socom_marsoc_cso"]];
 	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
 #endif
@@ -1120,6 +1157,11 @@ if (!d_gmcwgwinter) then {
 	d_sniper_W = [["West","rhs_faction_usarmy_d","rhs_group_nato_usarmy_d_infantry","rhs_group_nato_usarmy_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 #endif
+#ifdef __VT7__
+	d_sniper_E = [["East","UK3CB_NAP_O","SpecOps","UK3CB_NAP_O_Sniper_Team"] call d_fnc_GetConfigGroup];
+	d_sniper_W = [["West","rhs_faction_usarmy_d","rhs_group_nato_usarmy_d_infantry","rhs_group_nato_usarmy_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
+	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
+#endif
 #ifdef __UNSUNG__
 	d_sniper_E = [["uns_men_VC_mainforce_Rmrk", "uns_men_VC_mainforce_Roff"]];
 	d_sabotage_E = [["uns_men_VC_mainforce_68_Roff","uns_men_VC_mainforce_68_Ra1", "uns_men_VC_mainforce_68_Ra2", "uns_men_VC_mainforce_68_Rmg"]];
@@ -1158,6 +1200,9 @@ if (!d_gmcwgwinter) then {
 #endif
 #ifdef __LYTHIUM__
 #include "d_veh_a_O_lythium.sqf"
+#endif
+#ifdef __VT7__
+#include "d_veh_a_O_vt7.sqf"
 #endif
 #ifdef __CUP_SARA__
 #include "d_veh_a_O_CUP_SARA.sqf"
@@ -1231,6 +1276,9 @@ if (!d_gmcwgwinter) then {
 #endif
 #ifdef __LYTHIUM__
 	d_arti_observer_E = [["UK3CB_ADE_O_SPOT"]];
+#endif
+#ifdef __VT7__
+	d_arti_observer_E = [["UK3CB_NAP_O_SPOT"]];
 #endif
 #ifdef __LIVONIA__
 	d_arti_observer_E = [["O_T_Recon_JTAC_F"]];
@@ -1773,6 +1821,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __LYTHIUM__
 #include "d_sm_classes_lythium.sqf"
 #endif
+#ifdef __VT7__
+#include "d_sm_classes_vt7.sqf"
+#endif
 #ifdef __LIVONIA__
 #include "d_sm_classes_default.sqf"
 #endif
@@ -2028,6 +2079,18 @@ if (!d_gmcwgwinter) then {
 		["I_Heli_Transport_02_F"]
 	};
 #endif
+#ifdef __VT7__
+	// enemy parachute troops transport chopper
+	d_transport_chopper = call {
+		if (d_enemy_side_short == "E") exitWith {
+			["UK3CB_CW_SOV_O_EARLY_Mi8"]
+		};
+		if (d_enemy_side_short == "W") exitWith {
+			["B_T_VTOL_01_infantry_blue_F"]
+		};
+		["I_Heli_Transport_02_F"]
+	};
+#endif
 #ifdef __GMCWG__
 	// enemy parachute troops transport chopper
 	d_transport_chopper = call {
@@ -2275,6 +2338,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __LYTHIUM__
 		"Land_Cargo_HQ_V1_F";
 #endif
+#ifdef __VT7__
+		"Land_Cargo_HQ_V1_F";
+#endif
 #ifdef __CUP_CHERNARUS__
 		"Land_Cargo_HQ_V4_F";
 #endif
@@ -2302,6 +2368,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __LYTHIUM__
 		"LWarfareBDepot";
 #endif
+#ifdef __VT7__
+		"LWarfareBDepot";
+#endif
 #ifdef __TT__
 		"Land_Cargo_HQ_V1_F";
 #endif
@@ -2323,6 +2392,9 @@ if (!d_gmcwgwinter) then {
 		"Land_BagBunker_Small_F";
 #endif
 #ifdef __LYTHIUM__
+		"Land_BagBunker_Small_F";
+#endif
+#ifdef __VT7__
 		"Land_BagBunker_Small_F";
 #endif
 #ifdef __CUP_CHERNARUS__
@@ -2467,6 +2539,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __LYTHIUM__
 		_civVehiclesWeightedRural;
 #endif
+#ifdef __VT7__
+		_civVehiclesWeightedRural;
+#endif
 #ifdef __CUP_CHERNARUS__
 		_civVehiclesWeightedRural;
 #endif
@@ -2590,6 +2665,9 @@ if (!d_gmcwgwinter) then {
 #ifdef __LYTHIUM__
 		(_greekFaces + _persianFaces);
 #endif
+#ifdef __VT7__
+		(_greekFaces + _persianFaces);
+#endif
 #ifdef __CUP_TAKISTAN__
 		(_greekFaces + _persianFaces);
 #endif
@@ -2662,7 +2740,7 @@ if (hasInterface) then {
 		if (d_vn) exitWith {
 			["vn_b_wheeled_m151_01"]
 		};
-		["B_Quadbike_01_F", "B_LSV_01_unarmed_F"]
+		["rhsusf_mrzr4_d", "rhsusf_m1165a1_gmv_mk19_m240_socom_d","rhsusf_M1237_MK19_usarmy_d","rhsusf_stryker_m1126_mk19_d", "RHS_M2A3_BUSKIII", "rhsusf_m1a2sep2d_usarmy"]
 	};
 #endif
 #ifdef __OWN_SIDE_OPFOR__

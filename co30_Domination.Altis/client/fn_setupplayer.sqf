@@ -160,6 +160,9 @@ if (d_weather == 0) then {
 #ifdef __CUP_CHERNARUS__
 		d_withsandstorm = 1;
 #endif
+#ifdef __VT7__
+		d_withsandstorm = 1;
+#endif
 #ifdef __IFA3LITE__
 		d_withsandstorm = 1;
 #endif

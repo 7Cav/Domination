@@ -21,11 +21,13 @@ d_sm_array =
 	41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,
 	61,62,63,64,65,66,67,68,69,70,71,72,73,74,100,101,102,103,104,105,106];
 #endif
+#ifdef __VT7__
+d_sm_array =
+	[0,1,2,3,4,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20];
+#endif
 #ifdef __CUP_CHERNARUS__
 d_sm_array =
-	[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,
-	20,21,22,23,24,25,26,27,28,29,31,32,33,34,36,37,38,39,40,
-	41,42,44,45,46,47,49,50,51,52];
+	[0,1,2,3,4,5,6,7,8,9,10];
 	
 if (worldName != "cup_chernarus_A3") then {
 	d_sm_array pushBack 48;
@@ -139,6 +141,13 @@ if (isServer) then {
 		case "G": {["I_MRAP_03_gmg_F","I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F", "I_Truck_02_box_F", "I_Truck_02_fuel_F", "I_Truck_02_ammo_F", "I_APC_tracked_03_cannon_F"]};
 	};
 #endif
+#ifdef __VT7__
+	d_sm_convoy_vehicles = switch (d_enemy_side_short) do {
+		case "E": {["rhs_btr80a_vdv","rhs_btr80a_vdv", "rhs_btr70_vdv", "RHS_Ural_Repair_VDV_01", "RHS_Ural_Fuel_VDV_01", "RHS_Ural_VDV_01", "RHS_Ural_Zu23_VDV_01"]};
+		case "W": {["rhsusf_M1117_D","RHS_M6", "RHS_M2A3_BUSKIII", "rhsusf_M977A4_REPAIR_usarmy_d", "rhsusf_M977A4_AMMO_usarmy_d", "rhsusf_M978A4_usarmy_d", "RHS_M2A2_BUSKI"]};
+		case "G": {["I_MRAP_03_gmg_F","I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F", "I_Truck_02_box_F", "I_Truck_02_fuel_F", "I_Truck_02_ammo_F", "I_APC_tracked_03_cannon_F"]};
+	};
+#endif
 #ifdef __CUP_CHERNARUS__
 	d_sm_convoy_vehicles = switch (d_enemy_side_short) do {
 		case "E": {["CUP_O_GAZ_Vodnik_PK_RU","CUP_O_BTR90_RU", "CUP_O_BRDM2_RUS", "CUP_O_Ural_Repair_RU", "CUP_O_Ural_Refuel_RU", "CUP_O_Ural_Reammo_RU", "CUP_O_BTR90_RU"]};
@@ -230,6 +239,13 @@ if (isServer) then {
 		case "G": {["I_MRAP_03_gmg_F","I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F", "I_Truck_02_box_F", "I_Truck_02_fuel_F", "I_Truck_02_ammo_F", "I_APC_tracked_03_cannon_F"]};
 	};
 #endif
+#ifdef __VT7__
+	d_sm_convoy_vehicles = switch (d_enemy_side_short) do {
+		case "E": {["rhs_btr80a_vdv","rhs_btr80a_vdv", "rhs_btr70_vdv", "RHS_Ural_Repair_VDV_01", "RHS_Ural_Fuel_VDV_01", "RHS_Ural_VDV_01", "RHS_Ural_Zu23_VDV_01"]};
+		case "W": {["rhsusf_M1117_D","RHS_M6", "RHS_M2A3_BUSKIII", "rhsusf_M977A4_REPAIR_usarmy_d", "rhsusf_M977A4_AMMO_usarmy_d", "rhsusf_M978A4_usarmy_d", "RHS_M2A2_BUSKI"]};
+		case "G": {["I_MRAP_03_gmg_F","I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F", "I_Truck_02_box_F", "I_Truck_02_fuel_F", "I_Truck_02_ammo_F", "I_APC_tracked_03_cannon_F"]};
+	};
+#endif
 #ifdef __GMCWG__
 	d_sm_convoy_vehicles = switch (d_enemy_side_short) do {
 		case "E": {
@@ -273,6 +289,9 @@ d_sm_folder = "ma3a";
 #ifdef __LYTHIUM__
 d_sm_folder = "ma3a";
 #endif
+#ifdef __VT7__
+d_sm_folder = "ma3a";
+#endif
 #ifdef __GMCWG__
 d_sm_folder = "ma3a";
 #endif
@@ -280,7 +299,7 @@ d_sm_folder = "ma3a";
 d_sm_folder = "ma3a";
 #endif
 #ifdef __CUP_CHERNARUS__
-d_sm_folder = "m";
+d_sm_folder = "ma3a";
 #endif
 #ifdef __CUP_TAKISTAN__
 d_sm_folder = "moa";

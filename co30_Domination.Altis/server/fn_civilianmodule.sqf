@@ -71,15 +71,21 @@ d_civArray = [
 #endif
 #ifdef __CUP_TAKISTAN__
 	d_civArray = [
-		"CUP_C_TK_Man_05_Waist",
-		"CUP_C_TK_Man_06_Waist",
-		"CUP_C_TK_Man_01_Coat",
-		"CUP_C_TK_Man_08_Waist",
-		"CUP_C_TK_Man_03_Coat",
-		"CUP_C_TK_Man_01_Jack",
-		"CUP_C_TK_Man_06_Jack",
-		"CUP_C_TK_Man_03_Jack",
-		"CUP_C_TK_Man_03_Jack"
+		"C_man_1",
+		"C_man_polo_1_F",
+		"C_man_polo_2_F",
+		"C_man_polo_3_F",
+		"C_man_polo_4_F",
+		"C_man_polo_5_F",
+		"C_man_polo_6_F",
+		"C_man_p_fugitive_F",
+		"C_Man_casual_1_F",
+		"C_Man_casual_2_F",
+		"C_Man_casual_3_F",
+		"C_Man_casual_4_F",
+		"C_Man_casual_5_F",
+		"C_Man_casual_6_F",
+		"C_Story_Mechanic_01_F"
 	];
 #endif
 #ifdef __CUP_ZARGABAD__

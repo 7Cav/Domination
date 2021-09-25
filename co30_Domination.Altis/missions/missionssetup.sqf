@@ -157,8 +157,8 @@ if (isServer) then {
 #endif
 #ifdef __CUP_TAKISTAN__
 	d_sm_convoy_vehicles = switch (d_enemy_side_short) do {
-		case "E": {["CUP_O_BTR60_TK","CUP_O_BRDM2_TKA", "CUP_O_BTR60_TK", "CUP_O_Ural_Repair_TKA", "CUP_O_Ural_Refuel_TKA", "CUP_O_Ural_Reammo_TKA", "CUP_O_Ural_ZU23_TKA"]};
-		case "W": {["B_MRAP_01_gmg_F","B_APC_Tracked_01_rcws_F", "B_MBT_01_cannon_F", "B_Truck_01_Repair_F", "B_Truck_01_fuel_F", "B_Truck_01_ammo_F", "B_APC_Tracked_01_AA_F"]};
+		case "E": {["rhs_btr80a_vdv","rhs_btr80a_vdv", "rhs_btr70_vdv", "RHS_Ural_Repair_VDV_01", "RHS_Ural_Fuel_VDV_01", "RHS_Ural_VDV_01", "RHS_Ural_Zu23_VDV_01"]};
+		case "W": {["rhsusf_M1117_D","RHS_M6", "RHS_M2A3_BUSKIII", "rhsusf_M977A4_REPAIR_usarmy_d", "rhsusf_M977A4_AMMO_usarmy_d", "rhsusf_M978A4_usarmy_d", "RHS_M2A2_BUSKI"]};
 		case "G": {["I_MRAP_03_gmg_F","I_APC_tracked_03_cannon_F", "I_MBT_03_cannon_F", "I_Truck_02_box_F", "I_Truck_02_fuel_F", "I_Truck_02_ammo_F", "I_APC_tracked_03_cannon_F"]};
 	};
 #endif

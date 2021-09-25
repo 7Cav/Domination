@@ -175,7 +175,7 @@ d_e_marker_color_alpha = 0.8;
 #include "sm_bonus_vec_ar_cup.sqf"
 #endif
 #ifdef __CUP_TAKISTAN__
-#include "sm_bonus_vec_ar_cup.sqf"
+#include "sm_bonus_vec_ar_rhs.sqf"
 #endif
 #ifdef __CUP_SARA__
 #include "sm_bonus_vec_ar_cup.sqf"
@@ -239,7 +239,7 @@ d_e_marker_color_alpha = 0.8;
 #include "mt_bonus_vec_ar_cup.sqf"
 #endif
 #ifdef __CUP_TAKISTAN__
-#include "mt_bonus_vec_ar_cup.sqf"
+#include "mt_bonus_vec_ar_rhs.sqf"
 #endif
 #ifdef __CUP_SARA__
 #include "mt_bonus_vec_ar_cup.sqf"
@@ -853,7 +853,7 @@ if (!d_gmcwgwinter) then {
 #include "d_allmen_O_CUP_CHER.sqf"
 #endif
 #ifdef __CUP_TAKISTAN__
-#include "d_allmen_O_CUP_TAKI.sqf"
+#include "d_allmen_O_takistan.sqf"
 #endif
 #ifdef __LYTHIUM__
 #include "d_allmen_O_lythium.sqf"
@@ -1002,7 +1002,7 @@ if (!d_gmcwgwinter) then {
 #include "d_specops_O_CUP_CHER.sqf"
 #endif
 #ifdef __CUP_TAKISTAN__
-#include "d_specops_O_CUP_TAKI.sqf"
+#include "d_specops_O_default.sqf"
 #endif
 #ifdef __LYTHIUM__
 #include "d_specops_O_default.sqf"
@@ -1133,9 +1133,9 @@ if (!d_gmcwgwinter) then {
 	d_sniper_I = [["Indep","CUP_I_NAPA","Infantry","CUP_I_NAPA_GrpInf_TeamSniper"] call d_fnc_GetConfigGroup];
 #endif
 #ifdef __CUP_TAKISTAN__
-	d_sniper_E = [["East","CUP_O_TK","Infantry","CUP_O_TK_SniperTeam"] call d_fnc_GetConfigGroup];
-	d_sniper_W = [["West","CUP_B_US_Army","Infantry","CUP_B_US_Army_SniperTeam"] call d_fnc_GetConfigGroup];
-	d_sniper_I = [["Indep","CUP_I_TK_GUE","Infantry","CUP_I_TK_GUE_SniperTeam"] call d_fnc_GetConfigGroup];
+	d_sniper_E = [["East","UK3CB_TKM_O","SpecOps","UK3CB_TKM_O_Sniper_Team"] call d_fnc_GetConfigGroup];
+	d_sniper_W = [["West","rhs_faction_usarmy_d","rhs_group_nato_usarmy_d_infantry","rhs_group_nato_usarmy_d_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
+	d_sniper_G = [["Indep","rhssaf_faction_army","rhssaf_group_army_m10_digital_infantry","rhssaf_group_army_m10_digital_infantry_squad_sniper"] call d_fnc_GetConfigGroup];
 #endif
 #ifdef __CUP_SARA__
 	d_sniper_E = [["East","CUP_O_SLA","Infantry_Desert","CUP_O_SLA_SniperTeam_Desert"] call d_fnc_GetConfigGroup];
@@ -1196,7 +1196,7 @@ if (!d_gmcwgwinter) then {
 #include "d_veh_a_O_CUP_CHER.sqf"
 #endif
 #ifdef __CUP_TAKISTAN__
-#include "d_veh_a_O_CUP_TAKI.sqf"
+#include "d_veh_a_O_takistan.sqf"
 #endif
 #ifdef __LYTHIUM__
 #include "d_veh_a_O_lythium.sqf"
@@ -1290,7 +1290,7 @@ if (!d_gmcwgwinter) then {
 	d_arti_observer_E = [["CUP_O_RUS_SpecOps_Scout_Autumn"]];
 #endif
 #ifdef __CUP_TAKISTAN__
-	d_arti_observer_E = [["CUP_O_RUS_SpecOps_Scout_Autumn"]];
+	d_arti_observer_E = [["UK3CB_ADE_O_SPOT"]];
 #endif
 #ifdef __CUP_SARA__
 	d_arti_observer_E = [["CUP_O_sla_Officer"]];
@@ -1578,7 +1578,7 @@ if (!d_gmcwgwinter) then {
 #include "d_compositions_CUP_Chernarus.sqf"
 #endif
 #ifdef __CUP_TAKISTAN__
-#include "d_compositions_CUP_Takistan.sqf"
+#include "d_compositions_default.sqf"
 #endif
 #ifdef __CUP_SARA__
 #include "d_compositions_CUP_Chernarus.sqf"
@@ -1834,7 +1834,7 @@ if (!d_gmcwgwinter) then {
 #include "d_sm_classes_CUP.sqf"
 #endif
 #ifdef __CUP_TAKISTAN__
-#include "d_sm_classes_CUP.sqf"
+#include "d_sm_classes_takistan.sqf"
 #endif
 #ifdef __CUP_SARA__
 #include "d_sm_classes_CUP.sqf"
@@ -2203,10 +2203,10 @@ if (!d_gmcwgwinter) then {
 	// enemy parachute troops transport chopper
 	d_transport_chopper = call {
 		if (d_enemy_side_short == "E") exitWith {
-			["CUP_O_AN2_TK"]
+			["RHS_Mi8MTV3_vvsc"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["B_Heli_Light_01_F"]
+			["rhsusf_CH53E_USMC"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2546,7 +2546,7 @@ if (!d_gmcwgwinter) then {
 		_civVehiclesWeightedRural;
 #endif
 #ifdef __CUP_TAKISTAN__
-		_civVehiclesWeightedRuralCupRemote;
+		_civVehiclesWeightedRural;
 #endif
 #ifdef __CUP_ZARGABAD__
 		_civVehiclesWeightedCityWealthLow;

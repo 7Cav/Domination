@@ -68,8 +68,8 @@ if (isNil "d_UnitsToRecruit") then {
 #endif
 #ifdef __CUP_TAKISTAN__
 	d_UnitsToRecruit = switch (d_player_side) do {
-		case blufor: {["CUP_B_US_Soldier", "CUP_B_US_Soldier_AR", "CUP_B_US_Soldier_Engineer_EOD", "CUP_B_US_Soldier_GL", "CUP_B_US_Soldier_MG", "CUP_B_US_Medic", "CUP_B_US_Engineer", "CUP_B_US_Soldier_AT"]};
-		case opfor: {[]};
+		case blufor: {["rhsusf_army_ocp_riflemanat", "rhsusf_army_ocp_sniper", "rhsusf_army_ocp_medic", "rhsusf_army_ocp_machinegunner", "rhsusf_army_ocp_maaws", "rhsusf_army_ocp_grenadier", "rhsusf_army_ocp_aa", "rhsusf_army_ocp_javelin"]};
+		case opfor: {["rhs_vdv_des_rifleman", "rhs_vdv_des_marksman", "rhs_vdv_des_medic", "rhs_vdv_des_machinegunner", "rhs_vdv_des_at", "rhs_vdv_des_grenadier_rpg", "rhs_vdv_des_engineer", "rhs_vdv_des_aa", "rhs_vdv_des_grenadier", "rhs_vdv_des_RShG2"]};
 		case independent: {[]};
 	};
 #endif

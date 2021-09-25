@@ -11,7 +11,7 @@ set D_NUM_PLAYERS_TT=50
 set D_NUM_PLAYERS_CO=40
 
 set CUR_DIR=%cd%
-set WORK_DIR=C:\Users\I347256\Dom
+set WORK_DIR=E:\Dom
 
 del *.pbo
 
@@ -120,6 +120,28 @@ rem Blufor RHS Lythium
 set NEW_VER=co%D_NUM_PLAYERS%_domination_%D_VER%_rhs_blufor.lythium
 set MISSION_SQM=..\mission_sqm\mission_blufor_lythium_7cav.sqm
 set X_SETUP=..\mission_sqm\x_setup_blufor_3cb_rhs_lythium.sqf
+md %WORK_DIR%
+xcopy %MASTER%\*.* %WORK_DIR% /E /Y
+echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y
+echo d | xcopy %X_SETUP% %WORK_DIR%\x_setup.sqf /Y
+cd %WORK_DIR%
+del i_weapons_default.sqf
+del i_weapons_CUP.sqf
+del i_weapons_IFA3.sqf
+del i_weapons_UNSUNG.sqf
+del i_weapons_gmcwg.sqf
+del i_weapons_csla.sqf
+del i_weapons_vn.sqf
+cd %CUR_DIR%
+rem ArmaScriptCompiler.exe
+md %NEW_VER%
+xcopy %WORK_DIR%\*.* %NEW_VER% /E /Y
+rmdir /S /Q %WORK_DIR%
+
+rem Blufor RHS VT7
+set NEW_VER=co%D_NUM_PLAYERS%_domination_%D_VER%_rhs_blufor.vt7
+set MISSION_SQM=..\mission_sqm\mission_blufor_vt7.sqm
+set X_SETUP=..\mission_sqm\x_setup_rhs_vt7.sqf
 md %WORK_DIR%
 xcopy %MASTER%\*.* %WORK_DIR% /E /Y
 echo d | xcopy %MISSION_SQM% %WORK_DIR%\mission.sqm /Y

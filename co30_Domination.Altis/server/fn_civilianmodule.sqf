@@ -88,6 +88,11 @@ d_civArray = [
 		"C_Story_Mechanic_01_F"
 	];
 #endif
+#ifdef __LYTHIUM__
+	d_civArray = [
+		"UK3CB_TKC_C_CIV"
+	];
+#endif
 #ifdef __CUP_ZARGABAD__
 	d_civArray = [
 		"CUP_C_TK_Man_05_Waist",

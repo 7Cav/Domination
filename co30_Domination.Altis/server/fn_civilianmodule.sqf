@@ -232,7 +232,7 @@ for "_i" from 0 to d_civ_groupcount do {
 	_grp = createGroup [civilian, true];
 
 	__TRACE("Placing a civilian cluster...")
-	[_randomPos, _grp, d_civ_unitcount] call _placeCivilianCluster;
+	//[_randomPos, _grp, d_civ_unitcount] call _placeCivilianCluster;
 };
 
 // create civilian module and use the module to spawn moving civilians (walking/running)
@@ -265,6 +265,8 @@ __TRACE_1("","_mu2")
 private _m = _grp_civmodule createUnit ["ModuleCivilianPresence_F", [0,0,0], [], 0, "NONE"];
 
 d_cur_tgt_civ_modules_presence pushBack _m;
+
+[_grp_civmodule, [_grp_civmodule], 200, 4, [], true] call lambs_wp_fnc_taskPatrol;
 
 //_m setVariable ["#debug", true]; // Debug mode on
 

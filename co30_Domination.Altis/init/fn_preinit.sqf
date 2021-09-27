@@ -65,6 +65,12 @@ d_lythium = false;
 d_lythium = true;
 #endif
 
+#ifndef __CUP_TAKISTAN__
+d_takistan = false;
+#else
+d_takistan = true;
+#endif
+
 #ifndef __VT7__
 d_vt7 = false;
 #else
@@ -1088,6 +1094,12 @@ if (!d_gmcwgwinter) then {
 		["East","UK3CB_ARD_O","SpecOps","UK3CB_ARD_O_SniperTeam"] call d_fnc_GetConfigGroup, ["East","UK3CB_TKM_O","SpecOps","UK3CB_TKM_O_Sniper_Team"] call d_fnc_GetConfigGroup
 	];
 #endif
+#ifdef __CUP_TAKISTAN__
+	d_specops_E = [
+		["East","UK3CB_ARD_O","SpecOps","UK3CB_ARD_O_Recon_SpecSquad"] call d_fnc_GetConfigGroup, ["East","UK3CB_ARD_O","SpecOps","UK3CB_ARD_O_DEM_SpecTeam"] call d_fnc_GetConfigGroup,
+		["East","UK3CB_ARD_O","SpecOps","UK3CB_ARD_O_SniperTeam"] call d_fnc_GetConfigGroup, ["East","UK3CB_TKM_O","SpecOps","UK3CB_TKM_O_Sniper_Team"] call d_fnc_GetConfigGroup
+	];
+#endif
 #ifdef __VT7__
 	d_specops_E = [
 		["East","UK3CB_NAP_O","SpecOps","UK3CB_NAP_O_DEMO_Team"] call d_fnc_GetConfigGroup, ["East","UK3CB_NAP_O","SpecOps","UK3CB_NAP_O_Sniper_Team"] call d_fnc_GetConfigGroup
@@ -1109,6 +1121,11 @@ if (!d_gmcwgwinter) then {
 	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
 #endif
 #ifdef __LYTHIUM__
+	d_sabotage_E = [["rhs_vmf_recon_rifleman_scout_akm", "rhs_vmf_recon_sergeant"]];
+	d_sabotage_W = [["rhsusf_socom_marsoc_cso_breacher", "rhsusf_socom_marsoc_cso"]];
+	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
+#endif
+#ifdef __CUP_TAKISTAN__
 	d_sabotage_E = [["rhs_vmf_recon_rifleman_scout_akm", "rhs_vmf_recon_sergeant"]];
 	d_sabotage_W = [["rhsusf_socom_marsoc_cso_breacher", "rhsusf_socom_marsoc_cso"]];
 	d_sabotage_G = [["CUP_I_GUE_Saboteur"]];
@@ -2203,10 +2220,10 @@ if (!d_gmcwgwinter) then {
 	// enemy parachute troops transport chopper
 	d_transport_chopper = call {
 		if (d_enemy_side_short == "E") exitWith {
-			["RHS_Mi8MTV3_vvsc"]
+			["UK3CB_ADA_O_Mi8","UK3CB_ADA_O_UH1H"]
 		};
 		if (d_enemy_side_short == "W") exitWith {
-			["rhsusf_CH53E_USMC"]
+			["B_T_VTOL_01_infantry_blue_F"]
 		};
 		["I_Heli_Transport_02_F"]
 	};
@@ -2345,7 +2362,7 @@ if (!d_gmcwgwinter) then {
 		"Land_Cargo_HQ_V4_F";
 #endif
 #ifdef __CUP_TAKISTAN__
-		"Land_Cargo_HQ_V1_F";
+		"LWarfareBDepot";
 #endif
 #ifdef __CUP_SARA__
 		"Land_Cargo_HQ_V1_F";

@@ -71,21 +71,7 @@ d_civArray = [
 #endif
 #ifdef __CUP_TAKISTAN__
 	d_civArray = [
-		"C_man_1",
-		"C_man_polo_1_F",
-		"C_man_polo_2_F",
-		"C_man_polo_3_F",
-		"C_man_polo_4_F",
-		"C_man_polo_5_F",
-		"C_man_polo_6_F",
-		"C_man_p_fugitive_F",
-		"C_Man_casual_1_F",
-		"C_Man_casual_2_F",
-		"C_Man_casual_3_F",
-		"C_Man_casual_4_F",
-		"C_Man_casual_5_F",
-		"C_Man_casual_6_F",
-		"C_Story_Mechanic_01_F"
+		"UK3CB_TKC_C_CIV"
 	];
 #endif
 #ifdef __LYTHIUM__

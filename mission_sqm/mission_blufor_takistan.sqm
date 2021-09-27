@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=964;
+		nextID=968;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=26;
+		nextID=28;
 	};
 	class Camera
 	{
-		pos[]={8182.0376,329.60422,2123.79};
-		dir[]={0.87248659,-0.4870711,0.04039748};
-		up[]={0.48664519,0.87330544,0.022532359};
-		aside[]={0.046251915,-1.1173979e-006,-0.9989754};
+		pos[]={8430.7861,347.99686,2014.5433};
+		dir[]={-0.8128382,-0.5732193,0.10407683};
+		up[]={-0.5686748,0.81933123,0.072814137};
+		aside[]={0.12701231,-8.4561179e-007,0.99195486};
 	};
 };
 binarizationWanted=0;
@@ -69,13 +69,17 @@ addons[]=
 	"rhsusf_c_stryker",
 	"rhsusf_c_m11xx",
 	"rhsusf_c_m1a2",
-	"RHS_US_A2Port_Armor"
+	"RHS_US_A2Port_Armor",
+	"A3_Soft_F_Gamma_Truck_01",
+	"A3_Soft_F_Exp_Truck_01",
+	"ace_realisticnames",
+	"ace_rearm"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=36;
+		items=39;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -321,6 +325,27 @@ class AddonsMetaData
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
+		class Item36
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item37
+		{
+			className="A3_Soft_F_Exp";
+			name="Arma 3 Apex - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item38
+		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 dlcs[]=
@@ -389,7 +414,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=293;
+		items=297;
 		class Item0
 		{
 			dataType="Marker";
@@ -14363,7 +14388,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8124.4048,298.16373,2087.1238};
-				angles[]={-0,2.6423907,0};
+				angles[]={0,2.6423907,0};
 			};
 			side="Empty";
 			flags=4;
@@ -14399,7 +14424,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8128.6118,298.16373,2089.5693};
-				angles[]={-0,2.6423907,0};
+				angles[]={0,2.6423907,0};
 			};
 			side="Empty";
 			flags=4;
@@ -14428,6 +14453,70 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item293
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8324.415,297.96561,2029.9821};
+				angles[]={-0,5.8066802,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=964;
+			type="B_Truck_01_ammo_F";
+		};
+		class Item294
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8294.79,297.96561,2010.0548};
+				angles[]={-0,5.7994208,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=965;
+			type="B_Truck_01_ammo_F";
+		};
+		class Item295
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8263.2012,297.96561,1995.6207};
+				angles[]={-0,5.8198152,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=966;
+			type="B_Truck_01_ammo_F";
+		};
+		class Item296
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8413.7412,297.94965,2001.0918};
+				angles[]={-0,5.740478,6.2784014};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=967;
+			type="B_Truck_01_ammo_F";
 		};
 	};
 };

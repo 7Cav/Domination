@@ -1402,6 +1402,9 @@ if (!d_gmcwgwinter) then {
 			if (d_rhs) exitWith {
 				"RHS_Mi8mt_Cargo_vv"
 			};
+			if (d_takistan) exitWith {
+				"RHS_Mi8mt_Cargo_vv"
+			};
 			if (d_csla) exitWith {
 				"CSLA_Mi17"
 			}; 
@@ -1457,6 +1460,9 @@ if (!d_gmcwgwinter) then {
 			};
 			if (d_rhs) exitWith {
 				"RHS_Su25SM_vvsc"
+			};
+			if (d_takistan) exitWith {
+				"UK3CB_TKA_O_Antonov_AN2_Armed"
 			};
 			if (d_csla) exitWith {
 				""
@@ -1517,6 +1523,9 @@ if (!d_gmcwgwinter) then {
 			};
 			if (d_rhs) exitWith {
 				"RHS_A10"
+			};
+			if (d_takistan) exitWith {
+				"UK3CB_TKA_O_Antonov_AN2_Armed"
 			};
 			"B_Plane_CAS_01_F"
 		};
@@ -1683,6 +1692,12 @@ if (!d_gmcwgwinter) then {
 			"CUP_B_M6LineBacker_USA_W"
 		};
 		if (d_rhs) exitWith {
+			"RHS_M6_wd"
+		};
+		if (d_takistan) exitWith {
+			"RHS_M6_wd"
+		};
+		if (d_vt7) exitWith {
 			"RHS_M6_wd"
 		};
 		if (d_gmcwg) exitWith {
@@ -1940,6 +1955,9 @@ if (!d_gmcwgwinter) then {
 				if (d_lythium) exitWith {
 					["UK3CB_ADA_O_Antonov_AN2_Armed_Bombs","UK3CB_ADA_O_Antonov_AN2_Armed","UK3CB_ADA_O_Antonov_AN2_Armed_Rockets","UK3CB_TKA_O_Cessna_T41_Armed","UK3CB_ARD_O_MIG29S"]
 				};
+				if (d_takistan) exitWith {
+					["UK3CB_TKA_O_Antonov_AN2_Armed"]
+				};
 				if (d_unsung) exitWith {
 					["uns_Mig21_CAS", "uns_Mig21_CBU", "uns_Mig21_HCAS"]
 				};
@@ -2044,6 +2062,12 @@ if (!d_gmcwgwinter) then {
 					["RHS_Mi24P_vdv","RHS_Mi24V_vdv","RHS_Ka52_vvsc","RHS_Mi24P_vvsc","RHS_Mi24Vt_vvsc","rhs_mi28n_vvsc"]
 				};
 				if (d_lythium) exitWith {
+					["UK3CB_ARD_O_Mi8AMTSh","UK3CB_ADA_O_UH1H_GUNSHIP"]
+				};
+				if (d_lythium) exitWith {
+					["UK3CB_ARD_O_Mi8AMTSh","UK3CB_ADA_O_UH1H_GUNSHIP"]
+				};
+				if (d_takistan) exitWith {
 					["UK3CB_ARD_O_Mi8AMTSh","UK3CB_ADA_O_UH1H_GUNSHIP"]
 				};
 				if (d_unsung) exitWith {

@@ -127,13 +127,13 @@ d_bara_trig_ar = [];
 
 private _barcompo = if (!d_vn) then {
 	[
-		["Land_PillboxWall_01_6m_round_F",[-6.79297,-3.49902,0],270,1,0,[],"","",true,false],
-		["Land_ConcreteWall_01_l_8m_F",[0.47168,7.73242,0.0022049],0,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[-6.33789,5.1084,0],280,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[7.88184,-3.47754,0.00019455],89.5086,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[-2.95898,-8.21387,0],180.111,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[7.46289,5.07715,0],80,1,0,[],"","",true,false],
-		["Land_PillboxWall_01_6m_round_F",[4.27734,-8.12598,0],180.111,1,0,[],"","",true,false]
+		["Land_BagFence_01_long_green_F",[-6.79297,-3.49902,0],270,1,0,[],"","",true,false],
+		["Land_BagFence_01_long_green_F",[0.47168,7.73242,0.0022049],0,1,0,[],"","",true,false],
+		["Land_BagFence_01_long_green_F",[-6.33789,5.1084,0],280,1,0,[],"","",true,false],
+		["Land_BagFence_01_long_green_F",[7.88184,-3.47754,0.00019455],89.5086,1,0,[],"","",true,false],
+		["Land_BagFence_01_long_green_F",[-2.95898,-8.21387,0],180.111,1,0,[],"","",true,false],
+		["Land_BagFence_01_long_green_F",[7.46289,5.07715,0],80,1,0,[],"","",true,false],
+		["Land_BagFence_01_long_green_F",[4.27734,-8.12598,0],180.111,1,0,[],"","",true,false]
 	]
 } else {
 	[

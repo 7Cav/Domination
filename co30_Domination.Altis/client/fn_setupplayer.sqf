@@ -520,7 +520,7 @@ if (!d_no_ai) then {
 	if (d_disable_player_arty == 0 && {d_string_player in d_can_use_artillery}) then {
 		d_player_can_call_arti = 1;
 	} else {
-		enableEngineArtillery false;
+		// enableEngineArtillery false;
 	};
 	if (d_with_airdrop == 0 && {d_string_player in d_can_call_drop_ar}) then {
 		d_player_can_call_drop = 1;
